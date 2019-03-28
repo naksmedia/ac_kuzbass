@@ -39,25 +39,25 @@
 
 // img
 .box_img_service {
-    background: url(/img/img_service_1.png) no-repeat;
+    background: url(/static/img/img_service_1.png) no-repeat;
     background-size: cover;
     margin-bottom: 30px;
 }
 
 .box_img_service_2 {
-    background: url(/img/img_service_2.png) no-repeat;
+    background: url(/static/img/img_service_2.png) no-repeat;
     background-size: cover;
     margin-bottom: 30px;
 }
 
 .box_img_service_3 {
-    background: url(/img/img_service_3.png) no-repeat;
+    background: url(/static/img/img_service_3.png) no-repeat;
     background-size: cover;
     margin-bottom: 30px;
 }
 
 .box_img_service_4 {
-    background: url(/img/img_service_4.png) no-repeat;
+    background: url(/static/img/img_service_4.png) no-repeat;
     background-size: cover;
     margin-bottom: 30px;
 }
@@ -190,7 +190,7 @@
     height: 50px;
     left: 0;
     margin-top: 10px;
-    background: url(/img/kvadrat.png) center 0 no-repeat;
+    background: url(/static/img/kvadrat.png) center 0 no-repeat;
 }
 
 .link_list_service a {
@@ -302,7 +302,7 @@
 }
 
 .carousel-control-prev-icon {
-    background: url(/img/arrow.png) no-repeat;
+    background: url(/static/img/arrow.png) no-repeat;
     -o-transform: rotate(180deg);
     -ms-transform: rotate(180deg);
     -moz-transform: rotate(180deg);
@@ -312,13 +312,13 @@
 }
 
 .carousel-control-next-icon {
-    background: url(/img/arrow.png) no-repeat;
+    background: url(/static/img/arrow.png) no-repeat;
 }
 
 // Contacti
 
 .box_background_contacti {
-    background: url(/img/background_contacti.png) no-repeat;
+    background: url(/static/img/background_contacti.png) no-repeat;
     background-size: cover;   
     margin-top: 50px;   
 }
