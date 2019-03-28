@@ -1,0 +1,50 @@
+{% extends 'mainapp/base.html' %}
+{% load static %}
+
+{% block content  %}
+
+{% comment %} {{ request.resolver_match.url_name }} {% endcomment %}
+
+  <!-- Include Modal -->
+  {% include 'mainapp/includes/modal-window.html' %}
+  {% comment %} <div w3-include-html="includes/modal-window.html"></div> {% endcomment %}
+  <!-- End Include Modal -->
+
+  <!-- Include Modal -->
+  {% include 'mainapp/includes/menu-bg-info.html' %}
+  {% comment %} <div w3-include-html="includes/menu-bg-info.html"></div> {% endcomment %}
+  <!-- End Include Modal -->
+
+  <!-- Include Modal -->
+  {% include 'mainapp/includes/service.html' %}
+  {% comment %} <div w3-include-html="includes/service.html"></div> {% endcomment %}
+  <!-- End Include Modal -->
+
+  <!-- Include Modal -->
+  {% include 'mainapp/includes/center.html' %}
+  {% comment %} <div w3-include-html="includes/center.html"></div> {% endcomment %}
+  <!-- End Include Modal -->
+
+  <!-- Include Modal -->
+  {% include 'mainapp/includes/certified.html' %}
+  {% comment %} <div w3-include-html="includes/certified.html"></div> {% endcomment %}
+  <!-- End Include Modal -->
+
+  <!-- Include Modal -->
+  {% include 'mainapp/includes/otzivi.html' %}
+  {% comment %} <div w3-include-html="includes/otzivi.html"></div> {% endcomment %}
+  <!-- End Include Modal -->
+
+  <!-- Include Modal -->
+  {% include 'mainapp/includes/adres.html' %}
+  {% comment %} <div w3-include-html="includes/adres.html"></div> {% endcomment %}
+  <!-- End Include Modal -->
+
+
+  <!-- Include Modal -->
+  {% include 'mainapp/includes/contacts.html' %}
+  {% comment %} <div w3-include-html="includes/contacts.html"></div> {% endcomment %}
+  <!-- End Include Modal -->
+
+
+{% endblock  %}
