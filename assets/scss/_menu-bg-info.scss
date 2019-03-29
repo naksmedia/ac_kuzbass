@@ -41,7 +41,6 @@
     cursor: pointer;
 }
 
-
 .menu__navbar .navbar .nav-item .nav-link {
     padding: 0;
     color: #fff;
@@ -56,6 +55,10 @@
 
 .dropdown-item {
     padding: 12px;
+    @media screen and (max-width: 320px) {
+       margin-bottom: 10px;
+       padding: 0px 10px;
+    }
 }
 
 .dropdown-menu {
@@ -66,10 +69,9 @@
     border-radius: 0px;
     text-transform: initial;
     padding: 12px;
-
     @media screen and (max-width: 320px) {
         font-size: 16;
-        color: #fff;
+        width: 290px;
     }
 }
 
@@ -81,12 +83,11 @@
     margin-right: 35px;
     color: #fff;
     font-weight: 450;
+}
 
+.nav-item .nav__link__two .dropdown-menu{
     @media screen and (max-width: 992px) {
-        padding: 0px 0px 15px;
-        font-weight: 200;
-        color: #fff;
-        font-weight: 450;
+       display: none;
     }
 }
 
@@ -117,7 +118,7 @@
 }
 
 .navbar-toggler {
-    // padding: 3px 10px;
+    padding: 0px;
 }
 
 // Конец меню
@@ -183,8 +184,12 @@ input[type="search"]::placeholder {
 
 // Background
 
+.bg_color{
+    background-color: #2660ad85;
+}
+
 .background {
-    background: url(/static/img/background.png) no-repeat;
+    background: url(/static/img/background.jpg) no-repeat;
     background-size: cover;
 }
 
@@ -200,6 +205,7 @@ input[type="search"]::placeholder {
     font-weight: 350;
     color: #fff;
     text-transform: uppercase;
+    position: relative;
 
 }
 
@@ -210,31 +216,38 @@ input[type="search"]::placeholder {
 
 .box_head_bg {
     padding: 60px 0px 60px;
+    @media screen and (max-width: 992px) {
+        text-align: center;
+    }
 }
 
 .head_bg_text {
-    vertical-align: middle;
-    text-align: center;
+
     font-size: 38px;
     font-weight: 500;
     color: #fff;
     text-transform: uppercase;
     line-height: 1.8;
+
+    @media screen and (max-width: 992px) {
+        font-size: 24px;
+    }
 }
 
 .head_bg_text_small {
-    vertical-align: middle;
-    text-align: center;
     font-size: 28px;
     font-weight: 300;
     color: #fff;
     line-height: 1.8;
     margin-top: 20px;
+
+    @media screen and (max-width: 992px) {
+        font-size: 18px;
+        line-height: 1.2;
+    }
 }
 
 .head_bg_text_small_two {
-    vertical-align: middle;
-    text-align: center;
     font-size: 18px;
     font-weight: 300;
     color: #fff;
@@ -244,27 +257,30 @@ input[type="search"]::placeholder {
 }
 
 .head_bg_box_button {
-    vertical-align: middle;
-    text-align: center;
     margin-bottom: 55px;
+    @media screen and (max-width: 992px) {
+       text-align: center;
+    }
 }
 
 .request {
     background: transparent;
     border: none;
-
+    @media screen and (max-width: 350px) {
+        margin-bottom: 35px;
+        padding: 0px;
+    }
     a {
         text-decoration: none;
-        color: #000;
+        color: #fff;
         font-size: 16px;
-        font-weight: 550;
+        font-weight: 400;
     }
 }
 
 .service {
     background: transparent;
     border: none;
-
     a {
         text-decoration: none;
         color: #fff;
@@ -273,22 +289,21 @@ input[type="search"]::placeholder {
     }
 }
 
+
+
 .request_button {
-    background-color: #ffbd3d;
-    border: none;       
-    padding: 10px 25px;
-    color: #000;
+    background-color: #2660ad;
+    border: none;
+    padding: 10px 50px; 
     text-decoration: none;
-    @media screen and (max-width: 320px) {
-        padding: 10px 10px;
+    @media screen and (max-width: 992px) {
+        padding: 12px 15px;
     }
-
     &:hover {
-        background-color: #e9b754;
+        background-color: #3772c0;
         transition: 0.2s;
-        color: #000;
+        color: #fff;
     }
-
 }
 
 .service_button {
@@ -297,11 +312,10 @@ input[type="search"]::placeholder {
     padding: 10px 50px;
     margin-left: 25px;
     color: #fff;
-    @media screen and (max-width: 365px) {
-        padding: 10px 45px;
-        margin-left: 10px;
+    @media screen and (max-width: 992px) {
+        padding: 10px 45px;  
+        margin-left: 0px;           
     }
-
     &:hover {
         background-color: rgba(255, 255, 255, 0.075);
         transition: 0.2s;
@@ -309,18 +323,15 @@ input[type="search"]::placeholder {
 }
 
 .sro_np_naks_text {
-    vertical-align: middle;
-    text-align: center;
     font-size: 16px;
     font-weight: 300;
     color: #fff;
     line-height: 1.8;
     margin-top: 20px;
+    margin-bottom: 0px;
 }
 
 .naks_link {
-    vertical-align: middle;
-    text-align: center;
     font-size: 16px;
     font-weight: 300;
 
@@ -329,5 +340,9 @@ input[type="search"]::placeholder {
     }
 
     line-height: 1.8;
-    margin-top: 20px;
+    margin-top: 5px;
+}
+
+.naks_link .spks_link{
+    margin-left: 10px;
 }

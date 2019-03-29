@@ -1,5 +1,5 @@
 {% load static %}
-<div class="container">
+<div class="container" id="service">
         <div class="row">
                 <div class="col-xl-12">
                     <div class="head_box_content">
@@ -13,81 +13,20 @@
                 </div>
             </div>
             <div class="row">
-                
+                {% for publ in publications %}
                 <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
-                    <div class="box_img_service">
+                    <div class="box_img_service" style="background: url({{ publ.photo }}) no-repeat;">
                         <a href="" class="service_link">
                             <div class="box_content">
                                 <p class="name_service">
-                                    Лаборатория разрушающего
-                                    и неразрушающего <br>
-                                    контроля
-                                </p>
-                                <div class="line_service_yellow"></div>
+                                    {{ publ.post.title }}
+                                </p>                                
                             </div>
                     </div>
                     </a>
                 </div>
-                <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
-                    <div class="box_img_service">
-                        <a href="" class="service_link">
-                            <div class="box_content">
-                                <p class="name_service">
-                                    Лаборатория разрушающего
-                                    и неразрушающего <br>
-                                    контроля
-                                </p>
-                                <div class="line_service_yellow"></div>
-                            </div>
-                    </div>
-                    </a>
-                </div>
-                <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
-                    <div class="box_img_service_2">
-                        <a href="" class="service_link">
-                            <div class="box_content">
-                                <p class="name_service">
-                                    Аттестация <br>
-                                    сварочных <br>
-                                    материалов
-                                </p>
-                                <div class="line_service_yellow"></div>
-                            </div>
-                    </div>
-                    </a>
-                </div>
+                {% endfor %}
         
             </div>
-            <div class="row">
-                <div class="col-xl-2"></div>
-                <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
-                    <div class="box_img_service_3">
-                        <a href="" class="service_link">
-                            <div class="box_content">
-                                <p class="name_service">
-                                    Аттестация <br>
-                                    сварочного <br>
-                                    оборудования
-                                </p>
-                                <div class="line_service_yellow"></div>
-                            </div>
-                    </div>
-                    </a>
-                </div>
-                <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
-                    <div class="box_img_service_4">
-                        <a href="" class="service_link">
-                            <div class="box_content">
-                                <p class="name_service">
-                                    Аттестация <br>
-                                    технологий <br>
-                                    сварки
-                                </p>
-                                <div class="line_service_yellow"></div>
-                            </div>
-                    </div>
-                    </a>
-                </div>
-        
-            </div>
+            
 </div>

@@ -99,20 +99,20 @@ def doc(request):
         "documents": documents
     }
     return render(request, 'mainapp/doc.html', content)
-def news(request):
-    return render(request, 'mainapp/news.html')
+def detail_news(request):
+    return render(request, 'mainapp/detail_news.html')
 def news_two(request):
     return render(request, 'mainapp/news_two.html')
-def center(request):
-    return render(request, 'mainapp/center.html')
-def profstandarti(request):
-    return render(request, 'mainapp/profstandarti.html')
+def center_info(request):
+    return render(request, 'mainapp/center_info.html')
+def service_details_page(request):
+    return render(request, 'mainapp/service_details_page.html')
 def all_news(request):
     content = {
         'title': 'All news',
         'news': Post.objects.all().order_by('-published_date')[:9]
     }
-    return render(request, 'mainapp/all_news.html', content)
+    return render(request, 'mainapp/all-news.html', content)
 def political(request):
     return render(request, 'mainapp/political.html')
 

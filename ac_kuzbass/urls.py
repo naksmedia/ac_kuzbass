@@ -23,6 +23,18 @@ from django.conf import settings
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', mainapp.index, name='index'),
+    path('detail_news', mainapp.detail_news, name='detail_news'),
+    path('political', mainapp.political, name='political'),
+    path('service_details_page', mainapp.service_details_page, name='service_details_page'),
+    path('all_news', mainapp.all_news, name='all_news'),
+    path('doc', mainapp.doc, name='doc'),
+    path('center_info', mainapp.center_info, name='center_info'),
+   
+      path(
+        'detailview/<slug:content>/<slug:pk>',
+        mainapp.details,
+        name='detailview'),
+       path('ckeditor/', include('ckeditor_uploader.urls')),
 ]
 
 if settings.DEBUG:

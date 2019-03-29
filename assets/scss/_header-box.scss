@@ -1,18 +1,21 @@
-.logo_box_head {
-    padding: 40px 0px;
+.box_header {
+    padding: 25px;
 
+    @media screen and (max-width: 400px) {
+        padding: 5px 0px;
+    }
+}
+
+.logo_box_head {
     @media screen and (max-width: 576px) {
-padding: 15px 10px;
-        vertical-align: middle;
+        padding: 15px 10px;
         text-align: center;
     }
 }
 
 .logo_box_free {
-    padding: 40px 0px;
-
     @media screen and (max-width: 942px) {
-      display: none;
+        display: none;
     }
 }
 
@@ -22,41 +25,37 @@ padding: 15px 10px;
 }
 
 .head_number {
-    padding: 40px 0px;
-
     @media screen and (max-width: 576px) {
-        padding: 15px 5px;
-        vertical-align: middle;
         text-align: center;
     }
+
 }
 
-.number {
+.head_number a {
     font-size: 26px;
     font-weight: 500;
+    color: #000;
+    text-decoration: none;
 
     @media screen and (max-width: 1300px) {
         font-size: 20px;
     }
 }
 
+
 .consultant_text {
-    font-size: 16px;
-    margin-top: -15px;
+    font-size: 14px;    
 }
 
 .feedback_button {
-    padding: 60px 0px;
-
     a {
         text-decoration: none;
-        color: #fff;
+        color: #2660ad;
     }
 
     @media screen and (max-width: 576px) {
         padding: 15px 10px;
-        margin-bottom: 25px;
-        vertical-align: middle;
+        margin-bottom: 10px;
         text-align: center;
     }
 }
@@ -64,19 +63,17 @@ padding: 15px 10px;
 .feedback_header {
     font-size: 16px;
     font-weight: 400;
-    background-color: #23395d;
-    padding: 10px 50px;
-    border-radius: 45px;
-    color: #fff;
+    border: 0.5px solid #2660ad;
+    padding: 10px 40px;
 
     &:hover {
-        background-color: #2f4870;
+        background-color: #336ebd;
         transition: 0.2s;
+        color: #fff;
     }
 }
 
 .logo_box_sasp {
-    padding: 40px 0px;
     text-align: right;
 
     @media screen and (max-width: 1399px) {

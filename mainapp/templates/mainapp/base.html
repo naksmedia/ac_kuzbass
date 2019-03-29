@@ -37,17 +37,14 @@
   {% comment %} <div w3-include-html="includes/modal-window.html"></div> {% endcomment %}
   <!-- End Include Modal -->
   
-  <!-- Include Modal -->
-  {% include 'mainapp/includes/header-box.html' %}
-  {% comment %} <div w3-include-html="includes/header-box.html"></div> {% endcomment %}
-  <!-- End Include Modal -->
 
   <!-- Include bg-menu-info -->
-  {% if request.resolver_match.url_name == 'index' %}
   {% include 'mainapp/includes/menu-bg-info.html' %}
-  <!-- {% else %}
-  {% include 'mainapp/includes/bg-inner-page.html' %}
-  {% endif %} -->
+  {% comment %} <div w3-include-html="includes/menu-bg-info.html"></div> {% endcomment %}
+  <!-- End Include bg-menu-info -->
+
+  <!-- Include bg-menu-info -->
+  {% include 'mainapp/includes/menu_bg.html' %}
   {% comment %} <div w3-include-html="includes/menu-bg-info.html"></div> {% endcomment %}
   <!-- End Include bg-menu-info -->
 
