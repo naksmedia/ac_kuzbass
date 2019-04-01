@@ -1,12 +1,12 @@
 .box_header {
-    padding: 25px;
+    padding: 25px 0px;
 
     @media screen and (max-width: 400px) {
         padding: 5px 0px;
     }
 }
 
-.logo_box_head {
+.logo_box_head {   
     @media screen and (max-width: 576px) {
         padding: 15px 10px;
         text-align: center;
@@ -64,7 +64,7 @@
     font-size: 16px;
     font-weight: 400;
     border: 0.5px solid #2660ad;
-    padding: 10px 40px;
+    padding: 15px 40px;
 
     &:hover {
         background-color: #336ebd;

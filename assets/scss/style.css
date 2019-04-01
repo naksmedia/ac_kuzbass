@@ -1,6 +1,6 @@
 @charset "UTF-8";
 .box_header {
-  padding: 25px; }
+  padding: 25px 0px; }
   @media screen and (max-width: 400px) {
     .box_header {
       padding: 5px 0px; } }
@@ -48,7 +48,7 @@
   font-size: 16px;
   font-weight: 400;
   border: 0.5px solid #2660ad;
-  padding: 10px 40px; }
+  padding: 15px 40px; }
   .feedback_header:hover {
     background-color: #336ebd;
     transition: 0.2s;
@@ -61,7 +61,8 @@
       display: none; } }
 
 .menu__background {
-  padding: 40px 0px 40px 0px; }
+  background-color: rgba(9, 40, 80, 0.781);
+  padding: 30px 0px 30px 0px; }
   @media screen and (max-width: 992px) {
     .menu__background {
       padding: 15px 0px;
@@ -72,7 +73,11 @@
 
 .navbar {
   font-size: 16px;
-  color: #fff; }
+  color: #fff;
+  text-align: center; }
+
+.menu__navbar {
+  text-align: right; }
 
 .menu__navbar ul {
   color: #fff;
@@ -97,6 +102,10 @@
 
 .menu__navbar .navbar-expand-lg .navbar-nav .nav-link {
   margin-right: 35px; }
+  @media screen and (max-width: 992px) {
+    .menu__navbar .navbar-expand-lg .navbar-nav .nav-link {
+      margin: 0;
+      margin-bottom: 15px; } }
 
 .dropdown-item {
   padding: 12px; }
@@ -245,10 +254,10 @@ input[type="search"]::placeholder {
       line-height: 1.2; } }
 
 .head_bg_text_small_two {
-  font-size: 18px;
-  font-weight: 300;
+  font-size: 22px;
+  font-weight: 350;
   color: #fff;
-  line-height: 1.8;
+  line-height: 1.6;
   margin-top: 10px;
   margin-bottom: 25px; }
 
@@ -283,7 +292,7 @@ input[type="search"]::placeholder {
 .request_button {
   background-color: #2660ad;
   border: none;
-  padding: 10px 50px;
+  padding: 12px 50px;
   text-decoration: none; }
   @media screen and (max-width: 992px) {
     .request_button {
@@ -833,9 +842,8 @@ body {
     .left_line_headline {
       display: none; } }
 
-.head_box_content {
-  margin-top: 50px;
-  margin-bottom: 35px; }
+.box_content_include {
+  padding: 45px 0px 45px; }
 
 .head_name_box {
   font-size: 45px;
@@ -1075,85 +1083,6 @@ body {
 .carousel-control-next-icon {
   background: url(/static/img/arrow.png) no-repeat; }
 
-.box_background_contacti {
-  background: url(/static/img/background_contacti.png) no-repeat;
-  background-size: cover; }
-
-.box_content_contacti {
-  background-color: #f5f9fee8;
-  padding: 0px 0px 50px; }
-
-.number_contacti {
-  font-size: 28px;
-  font-weight: 550;
-  color: #14284b;
-  margin-bottom: 0px;
-  display: inline-block; }
-  .number_contacti a {
-    text-decoration: none;
-    color: #14284b; }
-    .number_contacti a:hover {
-      color: #254172; }
-
-@media screen and (max-width: 435px) {
-  .box_contacti_number {
-    text-align: center; } }
-
-.text_number_contacti {
-  font-size: 16px;
-  font-weight: 400;
-  color: #14284b; }
-  @media screen and (max-width: 435px) {
-    .text_number_contacti {
-      margin-bottom: 5px; } }
-
-.mail_contacti {
-  font-size: 18px;
-  font-weight: 500;
-  color: #14284b;
-  float: right;
-  display: inline-block; }
-  @media screen and (max-width: 435px) {
-    .mail_contacti {
-      display: none; } }
-
-.mail_contacti_mob {
-  font-size: 18px;
-  font-weight: 500;
-  color: #14284b;
-  display: none; }
-  @media screen and (max-width: 435px) {
-    .mail_contacti_mob {
-      display: block;
-      text-align: center;
-      margin-top: 5px;
-      margin-bottom: 10px; } }
-
-.info_text_contacti {
-  font-size: 18px;
-  color: #14284b;
-  font-weight: 400;
-  text-align: center; }
-
-.feedback_button_contacti {
-  margin: 25px; }
-
-.feedback_button_contacti a {
-  text-decoration: none;
-  color: #fff;
-  margin-top: 35px; }
-
-.feedback_contacti {
-  font-size: 16px;
-  font-weight: 400;
-  background-color: #23395d;
-  padding: 10px 50px;
-  border-radius: 45px;
-  color: #fff; }
-  .feedback_contacti:hover {
-    background-color: #2f4870;
-    transition: 0.2s; }
-
 .box_adres_point {
   text-align: center;
   font-size: 24px;
@@ -1166,6 +1095,16 @@ body {
 .map_adres {
   width: 100%;
   margin-bottom: 0px; }
+
+.img-item {
+  margin-left: 50px;
+  border: 1px solid #f7f7f7;
+  padding: 25px; }
+
+.owl-dot:focus {
+  box-shadow: none;
+  outline: none;
+  border-radius: 0px; }
 
 .box_document {
   margin-top: 25px;
@@ -1287,5 +1226,87 @@ body {
   -moz-transform: scale(1.01);
   -o-transform: scale(1.01);
   -moz-cursor: pointer; }
+
+.box_background_contacti {
+  background: url(/static/img/background_contacti.png) no-repeat;
+  background-size: cover; }
+
+.box_content_contacti {
+  background-color: #f5f9fee8;
+  -moz-background-color: #f5f9fee8;
+  -o-background-color: #f5f9fee8;
+  -ms-background-color: #f5f9fee8;
+  -webkit-background-color: #f5f9fee8; }
+
+.number_contacti {
+  font-size: 28px;
+  font-weight: 550;
+  color: #14284b;
+  margin-bottom: 0px;
+  display: inline-block; }
+  .number_contacti a {
+    text-decoration: none;
+    color: #14284b; }
+    .number_contacti a:hover {
+      color: #254172; }
+
+@media screen and (max-width: 435px) {
+  .box_contacti_number {
+    text-align: center; } }
+
+.text_number_contacti {
+  font-size: 16px;
+  font-weight: 400;
+  color: #14284b; }
+  @media screen and (max-width: 435px) {
+    .text_number_contacti {
+      margin-bottom: 5px; } }
+
+.mail_contacti {
+  font-size: 18px;
+  font-weight: 500;
+  color: #14284b;
+  float: right;
+  display: inline-block; }
+  @media screen and (max-width: 435px) {
+    .mail_contacti {
+      display: none; } }
+
+.mail_contacti_mob {
+  font-size: 18px;
+  font-weight: 500;
+  color: #14284b;
+  display: none; }
+  @media screen and (max-width: 435px) {
+    .mail_contacti_mob {
+      display: block;
+      text-align: center;
+      margin-top: 5px;
+      margin-bottom: 10px; } }
+
+.info_text_contacti {
+  font-size: 18px;
+  color: #14284b;
+  font-weight: 400;
+  text-align: center; }
+
+.feedback_button_contacti {
+  margin: 25px; }
+
+.feedback_button_contacti a {
+  text-decoration: none;
+  color: #fff;
+  margin-top: 35px; }
+
+.feedback_contacti {
+  font-size: 16px;
+  font-weight: 400;
+  background-color: #23395d;
+  padding: 10px 50px;
+  border-radius: 45px;
+  color: #fff; }
+  .feedback_contacti:hover {
+    background-color: #2f4870;
+    transition: 0.2s; }
 
 /*# sourceMappingURL=style.css.map */

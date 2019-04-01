@@ -1,7 +1,7 @@
 // Меню
 .menu__background {
-
-    padding: 40px 0px 40px 0px;
+background-color: rgba(9, 40, 80, 0.781);
+    padding: 30px 0px 30px 0px;
 
     // border-radius: 7px;    
     @media screen and (max-width: 992px) {
@@ -17,8 +17,12 @@
 
 .navbar {
     font-size: 16px;
-    color: #fff;
+    color: #fff;   
+    text-align: center; 
+}
 
+.menu__navbar{
+    text-align: right;
 }
 
 .menu__navbar ul {
@@ -47,9 +51,13 @@
     font-weight: 450;
 }
 
-.menu__navbar .navbar-expand-lg .navbar-nav .nav-link {
-    // padding: 0; 
+
+.menu__navbar .navbar-expand-lg .navbar-nav .nav-link {    
     margin-right: 35px;
+    @media screen and (max-width: 992px) {
+      margin: 0;
+      margin-bottom: 15px;
+     }
 
 }
 
@@ -248,10 +256,10 @@ input[type="search"]::placeholder {
 }
 
 .head_bg_text_small_two {
-    font-size: 18px;
-    font-weight: 300;
+    font-size: 22px;
+    font-weight: 350;
     color: #fff;
-    line-height: 1.8;
+    line-height: 1.6;
     margin-top: 10px;
     margin-bottom: 25px;
 }
@@ -294,7 +302,7 @@ input[type="search"]::placeholder {
 .request_button {
     background-color: #2660ad;
     border: none;
-    padding: 10px 50px; 
+    padding: 12px 50px; 
     text-decoration: none;
     @media screen and (max-width: 992px) {
         padding: 12px 15px;

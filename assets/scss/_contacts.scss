@@ -1,0 +1,105 @@
+// Contacti
+
+.box_background_contacti {
+    background: url(/static/img/background_contacti.png) no-repeat;
+    background-size: cover;     
+}
+
+.box_content_contacti {
+    background-color: #f5f9fee8;  
+    -moz-background-color: #f5f9fee8;
+    -o-background-color: #f5f9fee8;
+    -ms-background-color: #f5f9fee8;
+    -webkit-background-color: #f5f9fee8;
+}
+
+.number_contacti {
+    font-size: 28px;
+    font-weight: 550;
+    color: #14284b;
+    margin-bottom: 0px;
+    display: inline-block;
+
+    a {
+        text-decoration: none;
+        color: #14284b;
+
+        &:hover {
+            color: #254172;
+        }
+
+    }
+}
+
+.box_contacti_number{
+    @media screen and (max-width: 435px) {
+        text-align: center;
+    }
+}
+
+.text_number_contacti {
+    font-size: 16px;
+    font-weight: 400;
+    color: #14284b;
+    @media screen and (max-width: 435px) {
+        margin-bottom: 5px;
+    }
+}
+
+.mail_contacti {
+    font-size: 18px;
+    font-weight: 500;
+    color: #14284b;
+    float: right;
+   display: inline-block;
+    @media screen and (max-width: 435px) {
+        display: none;
+    }
+}
+.mail_contacti_mob {
+    font-size: 18px;
+    font-weight: 500;
+    color: #14284b;
+    
+   display: none;
+    @media screen and (max-width: 435px) {
+        display: block;
+    text-align: center;
+        margin-top: 5px;
+        margin-bottom: 10px;
+    }
+}
+
+
+
+.info_text_contacti{
+    font-size: 18px;
+    color: #14284b;
+    font-weight: 400;
+    text-align: center;
+}
+
+
+.feedback_button_contacti{
+    margin: 25px;
+}
+
+.feedback_button_contacti a{
+    text-decoration: none;
+    color: #fff;
+    margin-top: 35px;
+}
+
+
+.feedback_contacti {
+    font-size: 16px;
+    font-weight: 400;
+    background-color: #23395d;
+    padding: 10px 50px;
+    border-radius: 45px;
+    color: #fff;
+    &:hover {
+        background-color: #2f4870;
+        transition: 0.2s;
+    }
+}
