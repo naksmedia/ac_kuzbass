@@ -848,7 +848,6 @@ body {
 .head_name_box {
   font-size: 45px;
   font-weight: 400;
-  vertical-align: middle;
   text-align: center;
   margin-bottom: 5px;
   text-transform: uppercase; }
@@ -864,7 +863,6 @@ body {
 
 .head_box_content_small_text {
   font-size: 16px;
-  vertical-align: middle;
   text-align: center; }
 
 .box_content {
