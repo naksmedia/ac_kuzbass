@@ -34,12 +34,19 @@
                     <span class="sr-only">(current)</span>
                   </a>
                 </li>
-                <li class="nav-item active">
-                  <a class="nav-link{% if request.resolver_match.url_name == 'index' %} smoothScroll{% endif %}"
-                    href="{% if request.resolver_match.url_name == 'index' %}#service{% else %}{% url 'index' %}#service{% endif %}">Услуги
-                    <span class="sr-only">(current)</span>
-                  </a>
-                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                     Услуги
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item" href="#">Аттестация сварочного <br> производства</a>
+                      <a class="dropdown-item" href="#">Профессиональная квалификация <br> в области сварочного производства </a>                     
+                      <a class="dropdown-item" href="#">Аттестация сварочного <br> оборудования</a>
+                      <a class="dropdown-item" href="#">Лаборатории контроля <br> качества</a>
+                      <a class="dropdown-item" href="#">Высокотехнологичный <br> центр НАКС (МВЦ НАКС)</a>
+                
+                    </div>
+                  </li>
 
                 <li class="nav-item active">
                   <a class="nav-link" href="{% url 'doc' %}">Документы

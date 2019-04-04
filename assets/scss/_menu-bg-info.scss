@@ -1,6 +1,6 @@
 // Меню
 .menu__background {
-background-color: rgba(9, 40, 80, 0.781);
+background-color: rgb(51, 70, 95);
     padding: 30px 0px 30px 0px;
 
     // border-radius: 7px;    
@@ -70,11 +70,11 @@ background-color: rgba(9, 40, 80, 0.781);
 }
 
 .dropdown-menu {
-    margin-top: 22px;
+    margin-top: 30px;
     color: #ecf5fe;
     box-shadow: 0 2px 18px rgba(0, 0, 0, 0.09);
     border: none;
-    border-radius: 0px;
+    border-radius: 15px;
     text-transform: initial;
     padding: 12px;
     @media screen and (max-width: 320px) {
@@ -83,8 +83,21 @@ background-color: rgba(9, 40, 80, 0.781);
     }
 }
 
-.dropdown-item a {
+.dropdown-menu a {
     margin-bottom: 1px solid #000;
+    @media screen and (max-width: 320px) {
+       font-size: 12px;
+    }
+}
+.dropdown-item:hover {
+    border-radius: 15px;
+    background-color: rgba(173, 173, 173, 0.185);
+    transition: 0.3s;
+}
+
+.dropdown-item{
+    border-radius: 15px;
+   
 }
 
 .menu__navbar .navbar .nav-item .nav__link__two {
@@ -192,14 +205,25 @@ input[type="search"]::placeholder {
 
 // Background
 
-.bg_color{
-    background-color: #2660ad85;
+.bg_carousel_content_color{
+    background-color: #20202085;
 }
 
-.background {
+.bg_carousel_content_one {
     background: url(/static/img/background.jpg) no-repeat;
     background-size: cover;
 }
+
+.bg_carousel_content_two {
+    background: url(/static/img/nerazrush.jpg) no-repeat;
+    background-size: cover;
+}
+
+.bg_carousel_content_three {
+    background: url(/static/img/background.jpg) no-repeat;
+    background-size: cover;
+}
+
 
 .system_button {
     a {
@@ -223,22 +247,20 @@ input[type="search"]::placeholder {
 }
 
 .box_head_bg {
-    padding: 60px 0px 60px;
+    padding: 60px 100px 60px;
     @media screen and (max-width: 992px) {
         text-align: center;
+        padding: 20px 0px 20px;
     }
 }
 
-.head_bg_text {
-
+.headline_bg_content{
     font-size: 38px;
     font-weight: 500;
     color: #fff;
-    text-transform: uppercase;
-    line-height: 1.8;
-
+       line-height: 1.6;
     @media screen and (max-width: 992px) {
-        font-size: 24px;
+        font-size: 18px;
     }
 }
 
@@ -262,26 +284,31 @@ input[type="search"]::placeholder {
     line-height: 1.6;
     margin-top: 10px;
     margin-bottom: 25px;
+    @media screen and (max-width: 992px) {
+        font-size: 16px;       
+    }
 }
 
 .head_bg_box_button {
     margin-bottom: 55px;
     @media screen and (max-width: 992px) {
        text-align: center;
+       margin-bottom: 10px;
     }
 }
 
 .request {
     background: transparent;
     border: none;
-    @media screen and (max-width: 350px) {
-        margin-bottom: 35px;
+    padding: 0px;
+    @media screen and (max-width: 320px) {
+        margin-bottom: 15px;
         padding: 0px;
     }
     a {
         text-decoration: none;
         color: #fff;
-        font-size: 16px;
+        font-size: 18px;
         font-weight: 400;
     }
 }
@@ -289,11 +316,29 @@ input[type="search"]::placeholder {
 .service {
     background: transparent;
     border: none;
+    padding: 0px;
     a {
         text-decoration: none;
         color: #fff;
-        font-size: 16px;
-        font-weight: 450;
+        font-size: 18px;
+        font-weight: 450;  
+    }
+}
+
+
+.service_button {
+    
+    background-color: transparent;
+    border: 1px solid #fff;
+    padding: 10px 50px;
+     color: #fff;
+    @media screen and (max-width: 992px) {
+        padding: 10px 45px;  
+        margin-left: 0px;           
+    }
+    &:hover {
+        background-color: rgba(255, 255, 255, 0.075);
+        transition: 0.2s;
     }
 }
 
@@ -311,22 +356,6 @@ input[type="search"]::placeholder {
         background-color: #3772c0;
         transition: 0.2s;
         color: #fff;
-    }
-}
-
-.service_button {
-    background-color: transparent;
-    border: 1px solid #fff;
-    padding: 10px 50px;
-    margin-left: 25px;
-    color: #fff;
-    @media screen and (max-width: 992px) {
-        padding: 10px 45px;  
-        margin-left: 0px;           
-    }
-    &:hover {
-        background-color: rgba(255, 255, 255, 0.075);
-        transition: 0.2s;
     }
 }
 
