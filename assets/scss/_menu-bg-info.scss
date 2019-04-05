@@ -387,8 +387,6 @@ input[type="search"]::placeholder {
     }
 }
 
-
-
 .service_button {
     
     background-color: transparent;
@@ -405,3 +403,29 @@ input[type="search"]::placeholder {
     }
 }
 
+
+
+.carousel-control-prev-icon {
+    background: url(/static/img/arrow.png) no-repeat;
+    -o-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+    width: 55px;
+    height: 55px;
+    margin-right: 25px;
+    
+}
+
+.carousel-control-next-icon {
+    background: url(/static/img/arrow.png) no-repeat;
+    -o-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+    width: 55px;
+    height: 55px;
+    margin-right: 25px;
+}

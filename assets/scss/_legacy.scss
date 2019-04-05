@@ -106,14 +106,6 @@ background-color: #e7f1ff;
   text-align: center;
 }
 
-.info_box_text{
-  border-right-width: 1px;
-  border-right-style: dashed;
-  border-right-color: #4b5c724f;
-  @media screen and (max-width: 1199px) {
-    border-right-width: 0px;    
-  }
-}
 
 
 
@@ -140,8 +132,12 @@ background-color: #e7f1ff;
   border-right-width: 1px;
   border-right-style: dashed;
   border-right-color: #4b5c724f;
+  border-left-width: 1px;
+  border-left-style: dashed;
+  border-left-color: #4b5c724f;
   @media screen and (max-width: 1199px) {
     border-right-width: 0px; 
+    border-left-width: 0px; 
     margin-top: 15px;   
   }
   }
