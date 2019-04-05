@@ -36,7 +36,7 @@
   }
   
   .content_center_text{
-    font-size: 16px;
+    font-size: 14px;
     line-height: 1.9;
     font-weight: 400;
     color: #555555;
@@ -61,4 +61,26 @@
         background-color: #2f4870;
         transition: 0.2s;
     }
+}
+
+
+.center_podrobnee{
+    border: none;
+    background-color: transparent;
+    padding: 0px;
+    margin-top: 5px;
+    
+    a{
+        color: #23395d;
+        padding: 12px 25px;
+        border:1px solid rgb(192, 192, 192); 
+        text-decoration: none;
+        font-size: 16px;    
+     
+        &:hover{
+            background-color:rgb(241, 241, 241);  
+            transition: 0.3s;
+        }   
+    }
+   
 }

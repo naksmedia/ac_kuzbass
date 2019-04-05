@@ -910,13 +910,15 @@ body {
 
 .naks_link {
   font-size: 13px;
-  font-weight: 300; }
+  font-weight: 300;
+  text-decoration: underline; }
   .naks_link a {
     color: #4b5c72;
     line-height: 1.8; }
 
 .naks_link .spks_link {
-  margin-left: 10px; }
+  margin-left: 10px;
+  text-decoration: underline; }
 
 .info_box_standarti {
   text-align: center;
@@ -999,7 +1001,7 @@ body {
   color: #555555; }
 
 .content_center_text {
-  font-size: 16px;
+  font-size: 14px;
   line-height: 1.9;
   font-weight: 400;
   color: #555555; }
@@ -1020,6 +1022,21 @@ body {
   .feedback_contacti:hover {
     background-color: #2f4870;
     transition: 0.2s; }
+
+.center_podrobnee {
+  border: none;
+  background-color: transparent;
+  padding: 0px;
+  margin-top: 5px; }
+  .center_podrobnee a {
+    color: #23395d;
+    padding: 12px 25px;
+    border: 1px solid silver;
+    text-decoration: none;
+    font-size: 16px; }
+    .center_podrobnee a:hover {
+      background-color: #f1f1f1;
+      transition: 0.3s; }
 
 .img-item {
   margin-left: 50px;
