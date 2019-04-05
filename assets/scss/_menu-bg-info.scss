@@ -1,7 +1,7 @@
 // Меню
 .menu__background {
 background-color: rgb(51, 70, 95);
-    padding: 30px 0px 30px 0px;
+    padding: 20px 0px 20px 0px;
 
     // border-radius: 7px;    
     @media screen and (max-width: 992px) {
@@ -48,7 +48,7 @@ background-color: rgb(51, 70, 95);
 .menu__navbar .navbar .nav-item .nav-link {
     padding: 0;
     color: #fff;
-    font-weight: 450;
+    font-weight: 350;
 }
 
 
@@ -103,7 +103,7 @@ background-color: rgb(51, 70, 95);
 .menu__navbar .navbar .nav-item .nav__link__two {
     margin-right: 35px;
     color: #fff;
-    font-weight: 450;
+    font-weight: 350;
 }
 
 .nav-item .nav__link__two .dropdown-menu{
@@ -309,7 +309,56 @@ input[type="search"]::placeholder {
         text-decoration: none;
         color: #fff;
         font-size: 18px;
+        font-weight: 400;      
+    }
+}
+
+.request_button {
+    background-color: #2660ad;
+    border: none;
+    padding: 12px 50px; 
+    text-decoration: none;
+    @media screen and (max-width: 1079px) {
+        padding:12px 20px;        
+    }
+    &:hover {
+        background-color: #3772c0;
+        transition: 0.2s;
+        color: #fff;
+    }
+}
+
+.request_for_menu {
+    background: transparent;
+    border: none;
+    padding: 0px;
+    @media screen and (max-width: 320px) {
+        margin-bottom: 15px;
+        padding: 0px;
+    }
+    a {
+        text-decoration: none;
+        color: #fff;
+        font-size: 18px;
         font-weight: 400;
+        @media screen and (max-width: 1079px) {
+            font-size: 14px;       
+        }
+    }
+}
+
+.request_button_for_menu {
+    background-color: #2660ad;
+    border: none;
+    padding: 22.5px 50px; 
+    text-decoration: none;
+    @media screen and (max-width: 1079px) {
+        padding: 22.5px 20px;        
+    }
+    &:hover {
+        background-color: #3772c0;
+        transition: 0.2s;
+        color: #fff;
     }
 }
 
@@ -321,9 +370,23 @@ input[type="search"]::placeholder {
         text-decoration: none;
         color: #fff;
         font-size: 18px;
-        font-weight: 450;  
+        font-weight: 350;  
     }
 }
+
+
+.service {
+    background: transparent;
+    border: none;
+    padding: 0px;
+    a {
+        text-decoration: none;
+        color: #fff;
+        font-size: 18px;
+        font-weight: 350;  
+    }
+}
+
 
 
 .service_button {
@@ -342,44 +405,3 @@ input[type="search"]::placeholder {
     }
 }
 
-
-
-.request_button {
-    background-color: #2660ad;
-    border: none;
-    padding: 12px 50px; 
-    text-decoration: none;
-    @media screen and (max-width: 992px) {
-        padding: 12px 15px;
-    }
-    &:hover {
-        background-color: #3772c0;
-        transition: 0.2s;
-        color: #fff;
-    }
-}
-
-.sro_np_naks_text {
-    font-size: 16px;
-    font-weight: 300;
-    color: #fff;
-    line-height: 1.8;
-    margin-top: 20px;
-    margin-bottom: 0px;
-}
-
-.naks_link {
-    font-size: 16px;
-    font-weight: 300;
-
-    a {
-        color: #fff;
-    }
-
-    line-height: 1.8;
-    margin-top: 5px;
-}
-
-.naks_link .spks_link{
-    margin-left: 10px;
-}
