@@ -1002,6 +1002,25 @@ body {
   font-weight: 400;
   color: #000000; }
 
+.center_podrobnee {
+  background-color: transparent;
+  border: none;
+  padding: 0px;
+  margin-top: 10px; }
+  .center_podrobnee a {
+    border: 1px solid #eee;
+    padding: 12px 25px;
+    text-decoration: none;
+    color: #555555;
+    font-size: 16px; }
+    .center_podrobnee a:hover {
+      background-color: #ebebeb;
+      transition: 0.3s; }
+
+.box_service {
+  padding: 25px;
+  background-color: #eee; }
+
 .img-item {
   margin-left: 50px;
   padding: 25px; }
@@ -1200,5 +1219,30 @@ body {
   color: #14284b;
   font-weight: 400;
   text-align: center; }
+
+.owl-carousel a {
+  text-decoration: none; }
+
+.name_personal {
+  font-size: 16px;
+  color: #494949;
+  text-align: center;
+  margin-top: 10px;
+  text-decoration: none;
+  font-weight: 450; }
+
+.img_personal:hover {
+  transition: 0.2s;
+  -moz-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  -webkit-transition: all 0.2s ease-out;
+  -webkit-transform: scale(1.01);
+  -moz-transform: scale(1.01);
+  -o-transform: scale(1.01); }
+
+.box_content_personal {
+  background: url(/static/img/bg_personal.jpg) no-repeat;
+  background-size: cover;
+  padding: 45px 0px 45px; }
 
 /*# sourceMappingURL=style.css.map */
