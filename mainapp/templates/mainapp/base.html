@@ -20,6 +20,7 @@
   <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
   <link rel="stylesheet" href="{% sass_src 'scss/style.scss' %}">
   <link rel="stylesheet" href="{% static 'css/animate.css' %}">
+  <link rel="stylesheet" href="{% static 'fonts/font.css' %}">
   <link rel="stylesheet" href="{% static 'css/jquery.fancybox.min.css' %}">
   <link rel="stylesheet" href="{% static 'owlcarousel/owl.carousel.min.css' %}">
   <link rel="stylesheet" href="{% static 'owlcarousel/owl.theme.default.min.css' %}">
@@ -39,7 +40,11 @@
   
 
   <!-- Include bg-menu-info -->
+  {% if request.resolver_match.url_name == 'index' %}
   {% include 'mainapp/includes/menu-bg-info.html' %}
+  {% else %}
+  {% include 'mainapp/includes/bg-inner-page.html' %}
+{% endif %}
   {% comment %} <div w3-include-html="includes/menu-bg-info.html"></div> {% endcomment %}
   <!-- End Include bg-menu-info -->
 

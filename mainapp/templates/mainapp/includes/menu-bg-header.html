@@ -47,17 +47,16 @@
                 
                     </div>
                   </li>
-
+                  <li class="nav-item active">
+                    <a class="nav-link" href="{% url 'doc' %}">ЦОК
+                      <span class="sr-only">(current)</span>
+                    </a>
+                  </li>      
                 <li class="nav-item active">
                   <a class="nav-link" href="{% url 'doc' %}">Документы
                     <span class="sr-only">(current)</span>
                   </a>
-                </li>
-                <li class="nav-item active">
-                  <a class="nav-link" href="{% url 'index' %}">Реестр САСв
-                    <span class="sr-only">(current)</span>
-                  </a>
-                </li>
+                </li>           
                 <li class="nav-item active">
                   <a class="nav-link{% if request.resolver_match.url_name == 'index' %} smoothScroll{% endif %}"
                     href="{% if request.resolver_match.url_name == 'index' %}#contact{% else %}{% url 'index' %}#contact{% endif %}">Контакты

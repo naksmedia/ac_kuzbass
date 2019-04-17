@@ -1,7 +1,7 @@
 // footer
 
 .box_footer_bg{
-    padding: 50px;
+    padding: 80px;
     @media screen and (max-width: 435px) {
      padding: 15px 15px 15px;
     }
@@ -150,3 +150,44 @@ color: #fff;
     }
     
 }
+
+
+.line_footer_basement{
+    border-bottom: 0.5px solid #6f7379;
+    width: 150px;
+    margin-top: 25px;
+   margin-bottom: 25px;
+}
+
+.enter_system_edo::before {
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    left: 0;
+    margin-top: 5px;
+    background: url(/static/img/enter_system.png) center 0 no-repeat;
+  }
+  
+  .enter_system_link{
+    font-size: 14px;
+    font-weight: 400;
+    color: #fff;
+    margin-left: 25px;
+  }
+  
+  .enter_system_edo a{
+    text-decoration: none;
+    color: #fff;
+    @media screen and (max-width: 1200px) {
+     margin-top: 15px;
+     margin-bottom: 15px;
+    }
+  }
+  
+  .enter_system_edo {
+    @media screen and (max-width: 1200px) {
+     margin-top: 25px;
+     margin-bottom: 25px;
+    }
+  }

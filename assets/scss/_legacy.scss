@@ -1,9 +1,9 @@
 // Спецификация
 
 body {
-    font-family: "Avenir Next Cyr", sans-serif;
-    font-size: 12px;
-    line-height: 1.5;
+    font-family: "HelveticaNeueCyr", sans-serif;
+    font-size: 14px;
+    line-height: 1.6;
     background-color: #fff;
  
 }
@@ -192,3 +192,21 @@ text-decoration: underline;
       transition: 0.2s;
   }
 }
+
+.bg_header_inner_page{
+  background: url(/static/img/bg_center.jpg) no-repeat;
+  background-size: cover;
+  padding: 45px 0px 45px;
+}
+
+.headline_bg_inner_page{
+  font-size: 26px;
+  font-weight: 500;
+}
+
+.subtitle_inner_page_text{
+  font-size: 20px;
+  padding: 15px 0px 0px;
+}
+
+
