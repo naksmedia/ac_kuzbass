@@ -103,12 +103,14 @@ def detail_news(request):
     return render(request, 'mainapp/detail_news.html')
 def partners(request):
     return render(request, 'mainapp/partners.html')
-def news_two(request):
-    return render(request, 'mainapp/news_two.html')
 def center_info(request):
     return render(request, 'mainapp/center_info.html')
-def service_details_page(request):
-    return render(request, 'mainapp/service_details_page.html')
+def page_details(request):
+    return render(request, 'mainapp/page_details.html')
+def cok(request):
+    return render(request, 'mainapp/cok.html')
+def profstandarti(request):
+    return render(request, 'mainapp/profstandarti.html')
 def all_news(request):
     content = {
         'title': 'All news',

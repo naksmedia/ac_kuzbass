@@ -50,8 +50,9 @@ class Category(models.Model):
 class ContentMixin(models.Model):
     '''base class for Post, Article and Documents'''
     title = models.CharField(u'Название', max_length=200)
+    url_code = models.CharField(u'Код ссылки', max_length=30, blank=True, default='НЕ УКАЗАН')
     short_description = models.CharField(
-        u'Краткое описание', max_length=100, blank=True)
+        u'Краткое описание', max_length=200, blank=True)
     tags = models.ManyToManyField(Tag, verbose_name='Тэги')
     published_date = models.DateTimeField(
         u'Дата публикации', blank=True, null=True)
@@ -239,15 +240,17 @@ class Staff(models.Model):
     def __str__(self):
         return '{} - {}'.format(self.name, self.job)
 
+
+
 class Menu(models.Model):
     """linking main page UI elements with its description"""
-    title = models.CharField(u'Заголовок меню', max_length=60)
-    url = models.URLField(u'Адрес ссылки', max_length=200)
-    order = models.SmallIntegerField(u'Порядок вывода')
+    url_code = models.CharField(u'Код ссылки', max_length=30)
+    title = models.CharField(u'Заголовок ссылки', max_length=60)
+    url = models.CharField(u'Адрес ссылки', max_length=200, default="НЕТ")
 
     class Meta:
-        verbose_name = "Ссылка меню"
-        verbose_name_plural = "Ссылки меню"
+        verbose_name = "Ссылка"
+        verbose_name_plural = "Ссылки"
 
     def __str__(self):
         return self.title
