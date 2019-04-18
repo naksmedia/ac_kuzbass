@@ -193,10 +193,15 @@ text-decoration: underline;
   }
 }
 
+
+
+// inner page
+
 .bg_header_inner_page{
   background: url(/static/img/bg_center.jpg) no-repeat;
   background-size: cover;
   padding: 45px 0px 45px;
+  margin-bottom: 45px;
 }
 
 .headline_bg_inner_page{
@@ -209,4 +214,28 @@ text-decoration: underline;
   padding: 15px 0px 0px;
 }
 
+.back_to_home_page{
+  background: transparent;
+  border: none;
+  outline: none;
+  padding: 0px;
+  margin-top: 15px;
+  a{   
+    padding: 12px 25px;
+    border: 1px solid #33465f;
+    text-decoration: none;
+    color: #33465f;
+    font-size: 16px;
+    &:hover{
+      background-color: #33465f18;
+      transition: 0.3s;
+    }
+  }
+}
 
+.img_back_to_page{
+  width: 5px;
+  margin-top: -3px;
+  padding: 0px;
+  margin-right: 20px;  
+}
