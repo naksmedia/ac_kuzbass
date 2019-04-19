@@ -93,12 +93,21 @@ def reestr(request):
     return render(request, 'mainapp/reestr.html', content)
 
 def doc(request):
-    documents= Document.objects.all()
+    # documents= Document.objects.all()
+
+    gac_documents = Document.objects.filter(
+        tags__in=Tag.objects.filter(name='ССР-3ГАЦ'))
+    csp_documents = Document.objects.filter(
+        tags__in=Tag.objects.filter(name='ССР-3ЦСП'))
+
     content={
         "title": "doc",
-        "documents": documents
+        "ssr_3gac_documents": gac_documents,
+        "ssr_3csp_documents": csp_documents
     }
     return render(request, 'mainapp/doc.html', content)
+
+
 def detail_news(request):
     return render(request, 'mainapp/detail_news.html')
 def partners(request):

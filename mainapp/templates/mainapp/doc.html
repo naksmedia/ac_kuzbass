@@ -27,8 +27,25 @@
     </div>
     <div class="box_document">
       <div class="row">
-        <div class="col-xl-7 no-padding  ">
-          {% for doc in documents %}
+        <div class="offset-xl-1 col-xl-7">
+        <h3>Документы ССР-3ГАЦ (аттестация персонала)</h3>
+          {% for doc in ssr_3gac_documents %}
+          <div class="col-12">
+            <a href="{{ doc.document }}" download="">
+              <div class="box_doc_file" title="Скачать">
+                <div class="{% if doc.extension == '.docx' %}icon_word{% else %}icon_pdf{% endif %}"></div>
+                <p class="doc_text_name">
+                  {{ doc.title|truncatechars:35 }}
+                  {{ doc.extension }}
+                </p>
+              </div>
+            </a>
+            <div class="line_center"></div>
+          </div>
+          {% endfor %}
+          <h3>Документы ССР-3ЦСП (специальная подготовка)</h3>
+
+          {% for doc in ssr_3csp_documents %}
           <div class="col-12">
             <a href="{{ doc.document }}" download="">
               <div class="box_doc_file" title="Скачать">

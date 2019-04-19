@@ -113,6 +113,10 @@ class Article(ContentMixin):
 
 
 class Document(models.Model):
+    """"
+    эта модель используется для
+    загрузки документов в базу данных
+    """
     title = models.CharField(u'Название', max_length=500)
     document = models.FileField(verbose_name='Документ',
                                 upload_to="documents/",
@@ -123,7 +127,15 @@ class Document(models.Model):
                                         PDF, DOCX, DOC, JPG, JPEG")])
     uploaded_at = models.DateTimeField(
         verbose_name='Загружен', default=timezone.now)
-    tags = models.ManyToManyField(Tag, verbose_name='Тэги', blank=True)
+    tags = models.ManyToManyField(Tag, verbose_name='Тэги', blank=True, help_text="""
+                        Для отображения документов в разделе ССР-3ГАЦ используйте тег 'ССР-3ГАЦ'<br>
+                        Для отображения документов в разделе ССР-3ЦСП используйте тег 'ССР-3ЦСП'<br>
+                        Для отображения документов в разделе АЦСМ-46 используйте тег 'АЦСМ-46'<br>
+                        Для отображения документов в разделе АЦСО-82 используйте тег 'АЦСО-82'<br>
+                        Для отображения документов в разделе 'АЦСТ-90' используйте тег 'АЦСТ-90'<br>
+                        Для отображения документов в разделе ЦОК-012 используйте тег 'ЦОК-012'<br>
+
+    """)
     created_date = models.DateTimeField(
         default=timezone.now, verbose_name='Дата создания')
     post = models.ForeignKey(Post, verbose_name='Страница',
