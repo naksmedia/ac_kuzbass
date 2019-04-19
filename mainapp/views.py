@@ -116,8 +116,21 @@ def center_info(request):
     return render(request, 'mainapp/center_info.html')
 def page_details(request):
     return render(request, 'mainapp/page_details.html')
+
 def cok(request):
-    return render(request, 'mainapp/cok.html')
+    spks_documents = Document.objects.filter(
+        tags__in=Tag.objects.filter(name="НПА СПКС")
+    ).order_by('-created_date')
+    spks_example_documents = Document.objects.filter(
+        tags__in=Tag.objects.filter(name="Образцы документов СПКС")
+    )
+    content = {
+        'title': 'cok_documets',
+        'spks_documents': spks_documents,
+        'spks_example_documents': spks_example_documents
+    }
+    return render(request, 'mainapp/cok.html', content)
+
 def profstandarti(request):
     return render(request, 'mainapp/profstandarti.html')
 def contacts(request):

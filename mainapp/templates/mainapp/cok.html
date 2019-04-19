@@ -213,222 +213,23 @@
                     </p>
                 </div>
                 <div class="block_document">
+
+
+                    {% for document in spks_documents %}
                     <div class="ocenka_document_box">
                         <div class="line_ocenka"></div>
                         <p class="ocenka_details_link_text">
-                            Указ Президента Российской Федерации «О национальном совете при Президенте Российской
-                            Федерации
-                            по
-                            профессиональным квалификациям» от 16 апреля 2014 г. № 249 (в ред. Указов Президента РФ от
-                            18.12.2016 № 676 и от 25.02.2019 № 76)
-                        </p>
-
-                        <button class="soglashenie__button mb-1">
-                            <a href="{{ doc.document.url }}" class="soglashenie__button__text"
-                                title="{{ doc.document.name }}" download="#">{{ doc.title|truncatechars:15 }}
-                                <img src="{% static '/img/download__icon.png' %}" alt="" class="download__icon"></a>
-                        </button>
-                        <div class="line_ocenka"></div>
-                    </div>
-                    <div class="ocenka_document_box">
-                        <p class="ocenka_details_link_text">
-                            Федеральный закон от 3 июля 2016 г. N 238-ФЗ «О независимой оценке квалификации»
-                        </p>
-
-                        <button class="soglashenie__button mb-1">
-                            <a href="{{ doc.document.url }}" class="soglashenie__button__text"
-                                title="{{ doc.document.name }}" download="#">{{ doc.title|truncatechars:15 }}
-                                <img src="{% static '/img/download__icon.png' %}" alt="" class="download__icon"></a>
-                        </button>
-                        <div class="line_ocenka"></div>
-                    </div>
-                    <div class="ocenka_document_box">
-                        <p class="ocenka_details_link_text">
-                            Федеральный закон от 3 июля 2016 г. N 239-ФЗ «О внесении изменений в Трудовой кодекс
-                            Российской
-                            Федерации в связи с принятием Федерального закона «О независимой оценке квалификации»
-                        </p>
-
-                        <button class="soglashenie__button mb-1">
-                            <a href="{{ doc.document.url }}" class="soglashenie__button__text"
-                                title="{{ doc.document.name }}" download="#">{{ doc.title|truncatechars:15 }}
-                                <img src="{% static '/img/download__icon.png' %}" alt="" class="download__icon"></a>
-                        </button>
-                        <div class="line_ocenka"></div>
-                    </div>
-                    <div class="ocenka_document_box">
-                        <p class="ocenka_details_link_text">
-                            Федеральный закон от 3 июля 2016 г. N 251-ФЗ «О внесении изменений в часть вторую Налогового
-                            кодекса Российской Федерации в связи с принятием Федерального закона «О независимой оценке
-                            квалификации»
-                        </p>
-
-                        <button class="soglashenie__button mb-1">
-                            <a href="{{ doc.document.url }}" class="soglashenie__button__text"
-                                title="{{ doc.document.name }}" download="#">{{ doc.title|truncatechars:15 }}
-                                <img src="{% static '/img/download__icon.png' %}" alt="" class="download__icon"></a>
-                        </button>
-                        <div class="line_ocenka"></div>
-                    </div>
-                    <div class="ocenka_document_box">
-                        <p class="ocenka_details_link_text">
-                            Постановление Правительства РФ от 16.11.2016 № 1204 «Об утверждении Правил проведения
-                            центром
-                            оценки квалификаций независимой оценки квалификации в форме профессионального экзамена»
-                        </p>
-
-                        <button class="soglashenie__button mb-1">
-                            <a href="{{ doc.document.url }}" class="soglashenie__button__text"
-                                title="{{ doc.document.name }}" download="#">{{ doc.title|truncatechars:15 }}
-                                <img src="{% static '/img/download__icon.png' %}" alt="" class="download__icon"></a>
-                        </button>
-                        <div class="line_ocenka"></div>
-                    </div>
-                    <div class="ocenka_document_box">
-                        <p class="ocenka_details_link_text">
-                            Приказ Минтруда России от 19.12.2016 № 758н «Об утверждении Примерного положения о совете по
-                            профессиональным квалификациям и Порядка наделения совета по профессиональным квалификациям
-                            полномочиями по организации проведения независимой оценки квалификации по определенному виду
-                            профессиональной деятельности и прекращения этих полномочий» (зарегистрирован в Минюсте
-                            России
-                            29.12.2016 № 45043)
-                        </p>
-
-                        <button class="soglashenie__button mb-1">
-                            <a href="{{ doc.document.url }}" class="soglashenie__button__text"
-                                title="{{ doc.document.name }}" download="#">{{ doc.title|truncatechars:15 }}
-                                <img src="{% static '/img/download__icon.png' %}" alt="" class="download__icon"></a>
-                        </button>
-                        <div class="line_ocenka"></div>
-                    </div>
-                    <div class="ocenka_document_box">
-                        <p class="ocenka_details_link_text">
-                            Приказ Минтруда России от 14.12.2016 № 729н «Об утверждении Порядка осуществления
-                            мониторинга и
-                            контроля в сфере независимой оценки квалификации» (зарегистрирован в Минюсте России
-                            20.12.2016 №
-                            44817)
-                        </p>
-
-                        <button class="soglashenie__button mb-1">
-                            <a href="{{ doc.document.url }}" class="soglashenie__button__text"
-                                title="{{ doc.document.name }}" download="#">{{ doc.title|truncatechars:15 }}
-                                <img src="{% static '/img/download__icon.png' %}" alt="" class="download__icon"></a>
-                        </button>
-                        <div class="line_ocenka"></div>
-                    </div>
-                    <div class="ocenka_document_box">
-                        <p class="ocenka_details_link_text">
-                            Приказ Минтруда России от 12.12.2016 № 725н «Об утверждении формы бланка свидетельства о
-                            квалификации и приложения к нему, технических требований к бланку свидетельства о
-                            квалификации,
-                            порядка заполнения бланка свидетельства о квалификации и выдачи его дубликата, а также формы
-                            заключения о прохождении профессионального экзамена» (зарегистрирован в Минюсте России
-                            29.12.2016 № 45071)
-                        </p>
-
-                        <button class="soglashenie__button mb-1">
-                            <a href="{{ doc.document.url }}" class="soglashenie__button__text"
-                                title="{{ doc.document.name }}" download="#">{{ doc.title|truncatechars:15 }}
-                                <img src="{% static '/img/download__icon.png' %}" alt="" class="download__icon"></a>
-                        </button>
-                        <div class="line_ocenka"></div>
-                    </div>
-                    <div class="ocenka_document_box">
-                        <p class="ocenka_details_link_text">
-                            Приказ Минтруда России от 12.12.2016 № 726н «Об утверждении положения о разработке
-                            наименований
-                            квалификаций и требований к квалификации, на соответствие которым проводится независимая
-                            оценка
-                            квалификации» (зарегистрирован в Минюсте России 26.12.2016 № 44970)
-                        </p>
-
-                        <button class="soglashenie__button mb-1">
-                            <a href="{{ doc.document.url }}" class="soglashenie__button__text"
-                                title="{{ doc.document.name }}" download="#">{{ doc.title|truncatechars:15 }}
-                                <img src="{% static '/img/download__icon.png' %}" alt="" class="download__icon"></a>
-                        </button>
-                        <div class="line_ocenka"></div>
-                    </div>
-                    <div class="ocenka_document_box">
-                        <p class="ocenka_details_link_text">
-                            Приказ Минтруда России от 02.12.2016 № 706н «Об утверждении образца заявления для проведения
-                            независимой оценки квалификации и Порядка подачи такого заявления» (зарегистрировано в
-                            Минюсте
-                            России 20.12.2016 № 44812)
-
+                            {{ document.title }}
                         </p>
                         <button class="soglashenie__button mb-1">
                             <a href="{{ doc.document.url }}" class="soglashenie__button__text"
-                                title="{{ doc.document.name }}" download="#">{{ doc.title|truncatechars:15 }}
+                                title="{{ doc.document.name }}" download="#">Скачать
                                 <img src="{% static '/img/download__icon.png' %}" alt="" class="download__icon"></a>
                         </button>
-                        <div class="line_ocenka"></div>
                     </div>
-                    <div class="ocenka_document_box">
-                        <p class="ocenka_details_link_text">
-                            Приказ Минтруда России от 01.12.2016 № 701н «Об утверждении Положения об апелляционной
-                            комиссии
-                            по рассмотрению жалоб, связанных с результатами прохождения профессионального экзамена и
-                            выдачей
-                            свидетельства о квалификации» (зарегистрирован в Минюсте России 29.12.2016 № 45042)
+                    {% endfor %}
 
-                        </p>
 
-                        <button class="soglashenie__button mb-1">
-                            <a href="{{ doc.document.url }}" class="soglashenie__button__text"
-                                title="{{ doc.document.name }}" download="#">{{ doc.title|truncatechars:15 }}
-                                <img src="{% static '/img/download__icon.png' %}" alt="" class="download__icon"></a>
-                        </button>
-                        <div class="line_ocenka"></div>
-                    </div>
-                    <div class="ocenka_document_box">
-                        <p class="ocenka_details_link_text">
-                            Приказ Минтруда России от 15.11.2016 № 649н «Об утверждении Порядка формирования и ведения
-                            реестра сведений о проведении независимой оценки квалификации и доступа к ним, а также
-                            перечня
-                            сведений, содержащихся в указанном реестре» (зарегистрировано в Минюсте России 16.12.2016 №
-                            44764)
-
-                        </p>
-
-                        <button class="soglashenie__button mb-1">
-                            <a href="{{ doc.document.url }}" class="soglashenie__button__text"
-                                title="{{ doc.document.name }}" download="#">{{ doc.title|truncatechars:15 }}
-                                <img src="{% static '/img/download__icon.png' %}" alt="" class="download__icon"></a>
-                        </button>
-                        <div class="line_ocenka"></div>
-                    </div>
-                    <div class="ocenka_document_box">
-                        <p class="ocenka_details_link_text">
-                            Приказ Минтруда России от 01.11.2016 № 601н «Об утверждении Положения о разработке оценочных
-                            средств для проведения независимой оценки квалификации» (зарегистрирован в Минюсте России
-                            29.12.2016 № 45047)
-                        </p>
-
-                        <button class="soglashenie__button mb-1">
-                            <a href="{{ doc.document.url }}" class="soglashenie__button__text"
-                                title="{{ doc.document.name }}" download="#">{{ doc.title|truncatechars:15 }}
-                                <img src="{% static '/img/download__icon.png' %}" alt="" class="download__icon"></a>
-                        </button>
-                        <div class="line_ocenka"></div>
-                    </div>
-                    <div class="ocenka_document_box">
-                        <p class="ocenka_details_link_text">
-                            Приказ Минтруда России от 19.12.2016 № 759н «Об утверждении требований к центрам оценки
-                            квалификаций и порядка отбора организаций для наделения их полномочиями по проведению
-                            независимой оценки квалификации и прекращения этих полномочий» (зарегистрирован в Минюсте
-                            России
-                            09.01.2017 № 45105)
-                        </p>
-
-                        <button class="soglashenie__button mb-1">
-                            <a href="{{ doc.document.url }}" class="soglashenie__button__text"
-                                title="{{ doc.document.name }}" download="#">{{ doc.title|truncatechars:15 }}
-                                <img src="{% static '/img/download__icon.png' %}" alt="" class="download__icon"></a>
-                        </button>
-                        <div class="line_ocenka"></div>
-                    </div>
                 </div>
                 <div class="block_text_two">
                     <p class="ocenka_details_medium_text" id="3">
@@ -607,34 +408,25 @@
                             квалификации</a>
                     </div>
                     <div class="line_ocenka"></div>
+
+
                     <p class="ocenka_details_medium_text" id="5">
                         Образцы документов в сфере независимой оценки квалификации
                     </p>
+
+                    {% for document in spks_example_documents %}
                     <p class="ocenka_details_small_text">
-                        Заявления для проведения независимой оценки квалификации:
+                        {{ document.title }}
                     </p>
                     <button class="soglashenie__button mb-1">
                         <a href="{{ doc.document.url }}" class="soglashenie__button__text"
-                            title="{{ doc.document.name }}" download="#">{{ doc.title|truncatechars:15 }}
+                            title="{{ doc.document.name }}" download="#">Скачать
                             <img src="{% static '/img/download__icon.png' %}" alt="" class="download__icon"></a>
                     </button>
-                    <p class="ocenka_details_small_text">
-                        Форма бланка свидетельства о квалификации:
-                    </p>
-                    <button class="soglashenie__button mb-1">
-                        <a href="{{ doc.document.url }}" class="soglashenie__button__text"
-                            title="{{ doc.document.name }}" download="#">{{ doc.title|truncatechars:15 }}
-                            <img src="{% static '/img/download__icon.png' %}" alt="" class="download__icon"></a>
-                    </button>
-                    <p class="ocenka_details_small_text">
-                        Форма заключения о прохождении профессионального экзамена:
-                    </p>
-                    <button class="soglashenie__button mb-1">
-                        <a href="{{ doc.document.url }}" class="soglashenie__button__text"
-                            title="{{ doc.document.name }}" download="#">{{ doc.title|truncatechars:15 }}
-                            <img src="{% static '/img/download__icon.png' %}" alt="" class="download__icon"></a>
-                    </button>
-                    <div class="line_ocenka"></div>
+                     <div class="line_ocenka"></div>
+                    {% endfor %}
+
+
                     <p class="ocenka_details_medium_text">
                         Апелляционная комиссия
                     </p>
