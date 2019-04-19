@@ -1,83 +1,54 @@
-// Contacti
-
-.box_background_contacti {
-    background: url(/static/img/background_contacti.png) no-repeat;
-    background-size: cover;     
-}
-
-.box_content_contacti {
-    background-color: #f5f9fee8;  
-    -moz-background-color: #f5f9fee8;
-    -o-background-color: #f5f9fee8;
-    -ms-background-color: #f5f9fee8;
-    -webkit-background-color: #f5f9fee8;
-}
-
-.number_contacti {
-    font-size: 28px;
-    font-weight: 550;
-    color: #14284b;
-    margin-bottom: 0px;
-    display: inline-block;
-
-    a {
-        text-decoration: none;
-        color: #14284b;
-
-        &:hover {
-            color: #254172;
-        }
-
-    }
-}
-
-.box_contacti_number{
-    @media screen and (max-width: 435px) {
-        text-align: center;
-    }
-}
-
-.text_number_contacti {
+.headline_text_contacts{
     font-size: 16px;
-    font-weight: 400;
-    color: #14284b;
-    @media screen and (max-width: 435px) {
-        margin-bottom: 5px;
+    font-weight: 350;
+    color: #666;
+}
+
+.ac_reestr_naks{
+    margin-top: 10px;
+    margin-bottom: 5px; 
+}
+
+.contacti_adres {
+    font-size: 16px;
+    margin-bottom: 16px;
+}
+
+.ya__map {
+    margin-bottom: 25px;
+}
+
+.headline_contacti {
+    margin-bottom: 25px;
+    font-size: 22px;
+    font-weight: 450;
+
+    @media screen and (max-width: 320px) {
+        margin-top: 15px;
+        margin-bottom: 0px;
     }
 }
 
-.mail_contacti {
-    font-size: 18px;
-    font-weight: 500;
-    color: #14284b;
-    float: right;
-   display: inline-block;
-    @media screen and (max-width: 435px) {
-        display: none;
-    }
-}
-.mail_contacti_mob {
-    font-size: 18px;
-    font-weight: 500;
-    color: #14284b;
-    
-   display: none;
-    @media screen and (max-width: 435px) {
-        display: block;
-    text-align: center;
-        margin-top: 5px;
-        margin-bottom: 10px;
+.dotted_left_border{
+    border-left: 1px dotted #ccc;
+    @media screen and (max-width: 1199px) {
+      display: none;
     }
 }
 
-
-
-.info_text_contacti{
-    font-size: 18px;
-    color: #14284b;
-    font-weight: 400;
-    text-align: center;
+.dotted_border_bottom{
+    border-bottom: 1px dotted #ccc;
+    margin-top: 15px;
+    margin-bottom: 15px;    
 }
 
 
+.number_contacti{
+    font-size: 16px;
+    font-weight: 450;
+}
 
+.phone_contacti{
+    font-size: 20px;
+    color: #000000;
+}

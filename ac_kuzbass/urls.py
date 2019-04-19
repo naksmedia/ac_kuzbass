@@ -32,6 +32,7 @@ urlpatterns = [
     path('page_details', mainapp.page_details, name='page_details'),
     path('cok', mainapp.cok, name='cok'),
     path('profstandarti', mainapp.profstandarti, name='profstandarti'),
+    path('contacts', mainapp.contacts, name='contacts'),
    
       path(
         'detailview/<slug:content>/<slug:pk>',

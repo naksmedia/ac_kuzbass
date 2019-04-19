@@ -2,126 +2,55 @@
 {% load static %}
 {% block content %}
 <div class="bg_header_inner_page" id="page_top">
-        <div class="container">
-            <div class="row">
-                <div class="col-xl-4">
-                    <div class="headline_bg_inner_page">
-                        Документы
-                    </div>
-                    <button class="back_to_home_page">
-                        <a href="{% url 'index' %}" class="link_to_home_page">
-                            <img src="/static/img/back_to_page.png" class="img_back_to_page" alt="">На главную
-                        </a>
-                    </button>
-                </div>
-            </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-xl-4">
+        <div class="headline_bg_inner_page">
+          Документы
         </div>
+        <button class="back_to_home_page">
+          <a href="{% url 'index' %}" class="link_to_home_page">
+            <img src="/static/img/back_to_page.png" class="img_back_to_page" alt="">На главную
+          </a>
+        </button>
+      </div>
     </div>
-  <div class="box_content_in_pages">
-        <div class="container">
-                <div class="row">
-                        <div class="col-xl-7">                            
-             
-                                <div class="col-12">
-                                  <p class="headline_doc">Список документов АЦСМ-46</p>
-                                  <p class="doc_name_list">Наименование документов</p>
-                                  {% for doc in acsm_62_list %}
-                                  <a href="{{ doc.document.url }}" download="">
-                                    <div class="doc_content">
-                                      <p class="doc_name">{{ doc.title }}</p>
-                                    </div>
-                                  </a>
-                                  {% endfor %}
-                                </div>
-                                 <div class="line_center"></div>
-                                <div class="col-12">
-                                  <p class="headline_doc">Список документов АЦСО-82</p>
-                                  <p class="doc_name_list">Наименование документов</p>
-                                  {% for doc in acso_114_list %}
-                                  <a href="{{ doc.document.url }}" download="">
-                                    <div class="doc_content">
-                                      <p class="doc_name">{{ doc.title }}</p>
-                                    </div>
-                                  </a>
-                                  {% endfor %}
-                                </div>
-                                 <div class="line_center"></div>
-                                <div class="col-12">
-                                  <p class="headline_doc">Список документов АЦСТ-90</p>
-                                  <p class="doc_name_list">Наименование документов</p>
-                                  {% for doc in acst_132_list %}
-                                  <a href="{{ doc.document.url }}" download="">
-                                    <div class="doc_content">
-                                      <p class="doc_name">{{ doc.title }}</p>
-                                    </div>
-                                  </a>
-                                  {% endfor %}
-                                </div>
-                                 <div class="line_center"></div>
-                                <div class="col-12">
-                                  <p class="headline_doc">Список документов ССР-3ГАЦ</p>
-                                  <p class="doc_name_list">Наименование документов</p>
-                                  {% for doc in acst_132_list %}
-                                  <a href="{{ doc.document.url }}" download="">
-                                    <div class="doc_content">
-                                      <p class="doc_name">{{ doc.title }}</p>
-                                    </div>
-                                  </a>
-                                  {% endfor %}
-                                </div>
-                                 <div class="line_center"></div>
-                                <div class="col-12">
-                                  <p class="headline_doc">Список документов ССР-3ЦСП</p>
-                                  <p class="doc_name_list">Наименование документов</p>
-                                  {% for doc in acst_132_list %}
-                                  <a href="{{ doc.document.url }}" download="">
-                                    <div class="doc_content">
-                                      <p class="doc_name">{{ doc.title }}</p>
-                                    </div>
-                                  </a>
-                                  {% endfor %}
-                                </div>
-                                 <div class="line_center"></div>
-                                <div class="col-12">
-                                  <p class="headline_doc" id="ano_dpo_stdiag">Список документов ООО АЦ "Кузбасский центр сварки и контроля"</p>
-                                  <p class="doc_name_list">Наименование документов</p>
-                                  {% for doc in ano_dpo_list %}
-                                  <a href="{{ doc.document.url }}" download="">
-                                    <div class="doc_content">
-                                      <p class="doc_name">{{ doc.title }}</p>
-                                    </div>
-                                  </a>
-                                  {% endfor %}
-                                </div>
-                                 <div class="line_center"></div>
-                                <div class="col-12">
-                                  <p class="headline_doc" id="lab_stdiag">Документы испытательная лаборатория "Кузбасский центр сварки и контроля"</p>
-                                  <p class="doc_name_list">Наименование документов</p>
-                                  {% for doc in lab_list %}
-                                  <a href="{{ doc.document.url }}" download="">
-                                    <div class="doc_content">
-                                      <p class="doc_name">{{ doc.title }}</p>
-                                    </div>
-                                  </a>
-                                  {% endfor %}
-                                </div>
-                                 <div class="line_center"></div>
-                                {% if other_docs %}
-                                <div class="col-12">
-                                  <p class="headline_doc">Другие документы</p>
-                                  <p class="doc_name_list">Наименование документов</p>
-                                  {% for doc in other_docs %}
-                                  <a href="{{ doc.document.url }}" download="">
-                                    <div class="doc_content">
-                                      <p class="doc_name">{{ doc.title }}</p>
-                                    </div>
-                                  </a>
-                                  {% endfor %}
-                                </div>
-                                 <div class="line_center"></div>
-                                {% endif %}
-                              </div>
-                </div>
-            </div>
   </div>
-  {% endblock content %}
+</div>
+<div class="box_content_in_pages">
+  <div class="container">
+    <div class="row">
+      <div class="col-xl-3">
+        <p class="headline_doc">Список документов АЦСМ-46</p>
+        <p class="doc_name_list">Наименование документов</p>
+      </div>
+    </div>
+    <div class="box_document">
+      <div class="row">
+        <div class="col-xl-7 no-padding  ">
+          {% for doc in documents %}
+          <div class="col-12">
+            <a href="{{ doc.document }}" download="">
+              <div class="box_doc_file" title="Скачать">
+                <div class="{% if doc.extension == '.docx' %}icon_word{% else %}icon_pdf{% endif %}"></div>
+                <p class="doc_text_name">
+                  {{ doc.title|truncatechars:35 }}
+                  {{ doc.extension }}
+                </p>
+              </div>
+            </a>
+            <div class="line_center"></div>
+          </div>
+          {% endfor %}
+        </div>
+        <div class="col-xl-2">
+          {% include 'mainapp/includes/side_panel_links_doc.html' %}
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</div>
+
+{% endblock content %}

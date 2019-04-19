@@ -2,6 +2,9 @@
 
 .box_footer_bg{
     padding: 80px;
+    @media screen and (max-width: 1440px) {
+        padding: 25px 25px 25px;
+    }
     @media screen and (max-width: 435px) {
      padding: 15px 15px 15px;
     }
