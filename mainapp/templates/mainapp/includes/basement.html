@@ -33,7 +33,7 @@
                     </div>
                     {% for post in basement_news %}
                     <div class="box_footer_news">
-                        <a href="{% url 'details' 'post' post.pk %}">
+                        <a href="{% url 'details_news' post.pk %}">
                             <p class="footer_news">
                                 {{ post.title }}
                             </p>
@@ -43,7 +43,8 @@
                         </p>
                     </div>
                     {% endfor %}
-                  
+
+
                 </div>
                 <div class="col-sm-4 col-md-4 col-xl-2">
                     <div class="head_info_footer">
@@ -75,12 +76,48 @@
                     </div>
                 </div>
                 <div class="col-sm-6 col-md-6 col-xl-2">
-                    <div class="enter_system_edo">
-                        <a href="https://ac.naks.ru/" class="enter_system_link" target="_blank">
-                            Войти в систему ЭДО</a>
+
+                    <div class="basement_block_contacti">
+                        <p class="basement_contacti">
+                            Центр по аттестации сварщиков и специалистов сварочного производства (ССР-3ГАЦ):
+                        </p>
+                        <p class="basement_phone">
+                            (3842) 44-14-92
+                        </p>
+                        <div class="line_basement"></div>
+                        <p class="basement_contacti">
+                                Центр по аттестации сварочных технологий (АЦСТ-90):
+                        </p>
+                        <p class="basement_phone">
+                                (3842) 44-14-91
+                        </p>
+                        <div class="line_basement"></div>
                     </div>
                 </div>
-            </div>
+                <div class="col-sm-6 col-md-6 col-xl-2">
+                    <div class="basement_block_contacti">
+                        <p class="basement_contacti">
+                                Центры по аттестации <br> сварочного <br> оборудования (АЦСО-82):
+                        </p>
+                        <p class="basement_phone">
+                                (3842)44-14-94
+                        </p>
+                        <div class="line_basement"></div>
+                        <p class="basement_contacti">
+                                Центры по аттестации сварочных материалов (АЦСМ-46):
+                        </p>
+                        <p class="basement_phone">
+                                (3842)44-14-91
+                        </p>
+                        <div class="line_basement"></div>
+                    </div>
+                    <div class="enter_system_edo">
+                            <a href="https://ac.naks.ru/" class="enter_system_link" target="_blank">
+                                Войти в систему ЭДО</a>
+                        </div>
+                </div>
+               
+            </div>       
         </div>
     </div>
 

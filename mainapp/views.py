@@ -96,20 +96,41 @@ def doc(request):
     # documents= Document.objects.all()
 
     gac_documents = Document.objects.filter(
-        tags__in=Tag.objects.filter(name='ССР-3ГАЦ'))
+        tags__in=Tag.objects.filter(name='ССР3ГАЦ'))
     csp_documents = Document.objects.filter(
-        tags__in=Tag.objects.filter(name='ССР-3ЦСП'))
+        tags__in=Tag.objects.filter(name='ССР3ЦСП'))
+    acsm_documents = Document.objects.filter(
+        tags__in=Tag.objects.filter(name='АЦСМ46'))
+    acso_documents = Document.objects.filter(
+        tags__in=Tag.objects.filter(name='АЦСО82'))
+    acst_documents = Document.objects.filter(
+        tags__in=Tag.objects.filter(name='АЦСТ90'))
+    cok_documents = Document.objects.filter(
+        tags__in=Tag.objects.filter(name='COK12'))
+
 
     content={
         "title": "doc",
         "ssr_3gac_documents": gac_documents,
-        "ssr_3csp_documents": csp_documents
+        "ssr_3csp_documents": csp_documents,
+        "acsm_46_documents": acsm_documents,
+        "acso_82_documents": acso_documents,
+        "acst_90_documents": acst_documents,
+        "cok_12_documents": cok_documents,
+      
     }
     return render(request, 'mainapp/doc.html', content)
 
 
-def detail_news(request):
-    return render(request, 'mainapp/detail_news.html')
+def details_news(request, pk=None):
+    post = Post.objects.get(pk=pk)
+    content= {
+        'title': 'Детальный просмотр',
+        'post': post
+    }
+    return render(request, 'mainapp/details_news.html', content)
+
+
 def partners(request):
     return render(request, 'mainapp/partners.html')
 def center_info(request):
@@ -140,52 +161,21 @@ def all_news(request):
         'title': 'All news',
         'news': Post.objects.all().order_by('-published_date')[:9]
     }
-    return render(request, 'mainapp/all-news.html', content)
+    return render(request, 'mainapp/all_news.html', content)
 def political(request):
     return render(request, 'mainapp/political.html')
 
-def details(request, content=None, pk=None):
+def details_news(request, pk=None):
 
     return_link = HttpResponseRedirect(request.META.get('HTTP_REFERER', '/'))
 
-    if request.GET:
-        content = request.GET.get('content_type')
-        pk = request.GET.get('pk')
-
-    content_select = {
-        'post': Post,
-        'article': Article
+    post = get_object_or_404(Post, pk=pk)
+    attached_images = PostPhoto.objects.filter(post__pk=pk)
+    attached_documents = Document.objects.filter(post__pk=pk)
+    post_content = {
+        'post': post,
+        'images': attached_images,
+        'documents': attached_documents,
     }
-    obj = get_object_or_404(content_select[content], pk=pk)
-    print(obj)
-    common_content = {'title': obj.title}
-    if content == 'post':
-        attached_images = PostPhoto.objects.filter(post__pk=pk)
-        attached_documents = Document.objects.filter(post__pk=pk)
-        post_content = {
-            'post': obj,
-            'images': attached_images,
-            'documents': attached_documents,
-            'bottom_related_news': Post.objects.filter(publish_on_main_page=False).exclude(pk=pk).order_by('published_date')[:4]
-        }
-    if content == 'article':
-        tags_pk_list = [tag.pk for tag in obj.tags.all()]
-        related_articles = Article.objects.filter(
-            tags__in=tags_pk_list).exclude(pk=pk).distinct()
-        post_content = {
-            'post': obj,
-            'related': related_articles,
-            #Следуюая строка - это вывод новостей в нижную часть страницы
-            'bottom_related_news': related_articles.order_by('-created_date')[:4]
-        }
 
-    context = common_content.copy()
-    context.update(post_content)
-    context['return_link'] = return_link
-
-    print('CONTEXT:', context)
-
-    print(request.resolver_match)
-    print(request.resolver_match.url_name)
-
-    return render(request, 'mainapp/page_details.html', context)
+    return render(request, 'mainapp/details_news.html', post_content)

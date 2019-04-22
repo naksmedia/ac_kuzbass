@@ -11,7 +11,7 @@
 
 
 .headline_doc {
-    font-size: 18px;
+    font-size: 22px;
     font-weight: 400;
     color: #33465f;
     margin-top: 25px;
@@ -49,14 +49,6 @@
     margin-bottom: 0;
 }
 
-.doc_name::before {
-    content: '';
-    position: absolute;
-    width: 45px;
-    height: 45px;
-    left: 0;
-    background: url(/img/icon_file.png) center 0 no-repeat;
-}
 
 .bd-sidebar {
     position: sticky;
@@ -88,11 +80,13 @@
 }
 
 .box_doc_file {
-    padding: 25px 0px;
-    height: 110px;
-    margin-bottom: 15px;
+    padding: 15px 0px;
+    height: 60px; 
 }
 
+.headline_doc_section{
+    font-size: 16px;
+}
 
 
 .box_doc_file_height {
@@ -111,8 +105,8 @@
 .icon_pdf::before {
     content: '';
     position: absolute;
-    width: 50px;
-    height: 50px;
+    width: 35px;
+    height: 35px;
     left: 0;
     margin-top: 5px;
     margin-left: 10px;
@@ -127,7 +121,7 @@
     color: rgb(90, 90, 90);
     margin-left: 55px;
     margin-bottom: 0;
-    padding: 15px 0px;
+    padding: 10px 0px;
     @media screen and (max-width: 440px) {
         padding: 5px 0px; 
         }
@@ -136,8 +130,8 @@
 .icon_word::before {
     content: '';
     position: absolute;
-    width: 50px;
-    height: 50px;
+    width: 35px;
+    height: 35px;
     left: 0;
     margin-top: 5px;
     margin-left: 10px;
@@ -172,3 +166,4 @@
 .show {
     display: block;
 }
+

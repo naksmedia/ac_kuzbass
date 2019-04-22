@@ -23,20 +23,20 @@ from django.conf import settings
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', mainapp.index, name='index'),
-    path('detail_news', mainapp.detail_news, name='detail_news'),
-    path('political', mainapp.political, name='political'),   
-    path('all_news', mainapp.all_news, name='all_news'),
-    path('doc', mainapp.doc, name='doc'),
-    path('center_info', mainapp.center_info, name='center_info'),
-    path('partners', mainapp.partners, name='partners'),
-    path('page_details', mainapp.page_details, name='page_details'),
-    path('cok', mainapp.cok, name='cok'),
-    path('profstandarti', mainapp.profstandarti, name='profstandarti'),
-    path('contacts', mainapp.contacts, name='contacts'),
+    path('details_news/<slug:pk>/', mainapp.details_news, name='details_news'),
+    path('political/', mainapp.political, name='political'),   
+    path('all_news/', mainapp.all_news, name='all_news'),
+    path('doc/', mainapp.doc, name='doc'),
+    path('center_info/', mainapp.center_info, name='center_info'),
+    path('partners/', mainapp.partners, name='partners'),
+    path('page_details/', mainapp.page_details, name='page_details'),
+    path('cok/', mainapp.cok, name='cok'),
+    path('profstandarti/', mainapp.profstandarti, name='profstandarti'),
+    path('contacts/', mainapp.contacts, name='contacts'),
    
-      path(
+    path(
         'detailview/<slug:content>/<slug:pk>',
-        mainapp.details,
+        mainapp.details_news,
         name='detailview'),
        path('ckeditor/', include('ckeditor_uploader.urls')),
 ]
