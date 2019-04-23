@@ -117,27 +117,34 @@ def doc(request):
         "acso_82_documents": acso_documents,
         "acst_90_documents": acst_documents,
         "cok_12_documents": cok_documents,
-      
+
     }
     return render(request, 'mainapp/doc.html', content)
 
 
-def details_news(request, pk=None):
-    post = Post.objects.get(pk=pk)
-    content= {
-        'title': 'Детальный просмотр',
-        'post': post
-    }
-    return render(request, 'mainapp/details_news.html', content)
+# def details_news(request, pk=None):
+#     post = Post.objects.get(pk=pk)
+#     content= {
+#         'title': 'Детальный просмотр',
+#         'post': post
+#     }
+#     return render(request, 'mainapp/details_news.html', content)
 
 
 def partners(request):
     return render(request, 'mainapp/partners.html')
 def center_info(request):
     return render(request, 'mainapp/center_info.html')
-def page_details(request):
-    
-    return render(request, 'mainapp/page_details.html')
+
+
+
+def page_details(request, pk=None):
+    post = get_object_or_404(Post, pk=pk)
+    content = {
+        'title': 'Детальный просмотр',
+        'post': post,
+    }
+    return render(request, 'mainapp/page_details.html', content)
 
 def cok(request):
     spks_documents = Document.objects.filter(
@@ -183,12 +190,14 @@ def details_news(request, pk=None):
     return_link = HttpResponseRedirect(request.META.get('HTTP_REFERER', '/'))
 
     post = get_object_or_404(Post, pk=pk)
+    related_posts = Post.objects.filter(publish_on_news_page=True).exclude(pk=pk)[:3]
     attached_images = PostPhoto.objects.filter(post__pk=pk)
     attached_documents = Document.objects.filter(post__pk=pk)
     post_content = {
         'post': post,
+        'related_posts': related_posts,
         'images': attached_images,
-        'documents': attached_documents,        
-    }    
+        'documents': attached_documents,
+    }
 
     return render(request, 'mainapp/details_news.html', post_content)

@@ -2,23 +2,18 @@
 <div class="sider_bar_service_pages">
     <div class="box_doc_right_column">
         <p class="headline_side_panel">
-            Требования к аттестации:
+            Аттестация проводится в соответствии с:
         </p>
-        <a data-info="RD_495" href="{% link_holder 'RD_495' %}" class="trebovanie__list">
+        <a data-info="RD_613" href="{% doc_holder 'RD_613' %}" class="trebovanie__list">
             <p>
-                • РД 03-613-03</p>
+                • {% doc_title 'RD_613' %}</p>
         </a>
         <div class="line_side_panel"></div>
     </div>
     <div class="box_doc_right_column">
-        <p class="headline_side_panel">
-            Заявки
-        </p>
-        <a data-info="PB_273" href="{% link_holder 'PB_273' %}" class="trebovanie__list">
-            <p>Форма заявки на аттестацию сварочных материалов производителя</p>
-        </a>
-        <a data-info="RD_495" href="{% link_holder 'RD_495' %}" class="trebovanie__list">
-            <p>Форма заявки на аттестацию сварочных материалов потребителя</p>
+
+        <a href="{% doc_holder 'ZAYAVKA_SM' %}" class="trebovanie__list">
+            <p>{% doc_title 'ZAYAVKA_SM' %}</p>
         </a>
         <div class="line_side_panel"></div>
     </div>
@@ -30,24 +25,24 @@
         <div class="list__service__column">
                 <ul class="side_panel_list_link">
                         <li>
-                                <a  href="{% link_holder 'ATCSM' %}" class="side_panel_right_column_text">{% title_holder 'ATCSM' %}</a>                             
+                                <a  href="{% link_holder 'ATCSM' %}" class="side_panel_right_column_text">{% title_holder 'ATCSM' %}</a>
                             </li>
                             <li>
-                                <a  href="{% link_holder 'ATCSO' %}" class="side_panel_right_column_text">{% title_holder 'ATCSO' %}</a>                             
+                                <a  href="{% link_holder 'ATCSO' %}" class="side_panel_right_column_text">{% title_holder 'ATCSO' %}</a>
                             </li>
                             <li>
-                                <a  href="{% link_holder 'ATCSP' %}" class="side_panel_right_column_text">{% title_holder 'ATCSP' %}</a>                             
+                                <a  href="{% link_holder 'ATCSP' %}" class="side_panel_right_column_text">{% title_holder 'ATCSP' %}</a>
                             </li>
                             <li>
-                                <a  href="{% link_holder 'ATCST' %}" class="side_panel_right_column_text">{% title_holder 'ATCST' %}</a>                             
+                                <a  href="{% link_holder 'ATCST' %}" class="side_panel_right_column_text">{% title_holder 'ATCST' %}</a>
                             </li>
                             <li>
-                                <a  href="{% link_holder 'MVC' %}" class="side_panel_right_column_text">{% title_holder 'MVC' %}</a>                             
+                                <a  href="{% link_holder 'MVC' %}" class="side_panel_right_column_text">{% title_holder 'MVC' %}</a>
                             </li>
                             <li>
-                                <a  href="{% link_holder 'ATTSM' %}" class="side_panel_right_column_text">{% title_holder 'ATTSM' %}</a>                             
+                                <a  href="{% link_holder 'ATTSM' %}" class="side_panel_right_column_text">{% title_holder 'ATTSM' %}</a>
                             </li>
-                    </ul>          
+                    </ul>
         </div>
 
     </div>

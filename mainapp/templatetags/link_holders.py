@@ -9,7 +9,7 @@ register = template.Library()
 def link_holder(url_code):
     try:
         post = Post.objects.get(url_code=url_code)
-        link = reverse('detailview', kwargs={'content': 'post', 'pk': post.pk})
+        link = reverse('page_details', kwargs={'pk': post.pk})
     except Post.DoesNotExist:
         link = '#'
     return link
@@ -31,4 +31,13 @@ def doc_holder(url_code):
     except Document.DoesNotExist:
         url = '#'
     return url
+
+@register.simple_tag
+def doc_title(url_code):
+    try:
+        doc = Document.objects.get(url_code=url_code)
+        title = doc.title
+    except Document.DoesNotExist:
+        title = 'Загрузите документ с кодом {}'.format(url_code)
+    return title
 

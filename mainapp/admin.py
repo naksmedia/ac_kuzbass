@@ -4,7 +4,7 @@ from django.utils.encoding import force_text
 from django.utils.html import format_html
 
 from .models import Post, Category, Tag, Document, PostPhoto, Article, Message, Contact
-from .models import Staff, Registry, Menu
+from .models import Staff, Registry, Menu, SidePanel
 
 # from .models import WeldData
 # from .domain_model import WeldOrg, Welder
@@ -80,7 +80,7 @@ get_tag_list.short_description = 'Список тэгов'
 
 @admin.register(Document)
 class DocumentAdmin(admin.ModelAdmin):
-    list_display = ['title', get_tag_list, 'publish_on_main_page']
+    list_display = ['title', 'url_code', get_tag_list, 'publish_on_main_page']
 
 
 @admin.register(Article)
@@ -101,9 +101,9 @@ class PostAdmin(admin.ModelAdmin):
     view_on_site = True
 
     fields = [
-        'id', 'title', 'tags', 'category', 'author', 'short_description',
+        'id', 'title', 'url_code', 'side_panel', 'tags', 'category', 'author', 'short_description',
         'text', get_url, 'created_date', 'published_date',
-        'publish_on_main_page', 'publish_on_news_page', 'publish_in_basement'
+        'publish_on_main_page', 'publish_on_news_page', 'publish_in_basement',
     ]
     readonly_fields = ['id', get_url]
     list_display = [
@@ -136,5 +136,6 @@ admin.site.register(Contact)
 admin.site.register(Staff)
 admin.site.register(Registry)
 admin.site.register(Menu)
+admin.site.register(SidePanel)
 # admin.site.register(WeldOrg)
 # admin.site.register(Welder)
