@@ -136,19 +136,20 @@ def partners(request):
 def center_info(request):
     return render(request, 'mainapp/center_info.html')
 def page_details(request):
+    
     return render(request, 'mainapp/page_details.html')
 
 def cok(request):
-    spks_documents = Document.objects.filter(
+    political_documents = Document.objects.filter(
         tags__in=Tag.objects.filter(name="НПА СПКС")
     ).order_by('-created_date')
-    spks_example_documents = Document.objects.filter(
+    political_example_documents = Document.objects.filter(
         tags__in=Tag.objects.filter(name="Образцы документов СПКС")
     )
     content = {
         'title': 'cok_documets',
-        'spks_documents': spks_documents,
-        'spks_example_documents': spks_example_documents
+        'political_documents': political_documents,
+        'political_example_documents': political_example_documents
     }
     return render(request, 'mainapp/cok.html', content)
 
@@ -162,8 +163,20 @@ def all_news(request):
         'news': Post.objects.all().order_by('-published_date')[:9]
     }
     return render(request, 'mainapp/all_news.html', content)
+
 def political(request):
-    return render(request, 'mainapp/political.html')
+    spks_documents = Document.objects.filter(
+        tags__in=Tag.objects.filter(name="НПА СПКС")
+    ).order_by('-created_date')
+    spks_example_documents = Document.objects.filter(
+        tags__in=Tag.objects.filter(name="Образцы документов СПКС")
+    )
+    content = {
+        'title': 'cok_documets',
+        'spks_documents': spks_documents,
+        'spks_example_documents': spks_example_documents
+    }
+    return render(request, 'mainapp/political.html', content)
 
 def details_news(request, pk=None):
 
@@ -175,7 +188,7 @@ def details_news(request, pk=None):
     post_content = {
         'post': post,
         'images': attached_images,
-        'documents': attached_documents,
-    }
+        'documents': attached_documents,        
+    }    
 
     return render(request, 'mainapp/details_news.html', post_content)

@@ -270,10 +270,9 @@ text-decoration: underline;
 }
 
 .box_right_column_service{
-  margin-left: 15px;
-  @media screen and (max-width: 992px) {
-      display: none;
-  }
+  // @media screen and (max-width: 992px) {
+  //     display: none;
+  // }
 }
 
 // page cok

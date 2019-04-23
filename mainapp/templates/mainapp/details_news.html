@@ -99,44 +99,41 @@
 
 
             </div>
-        </div>
-        <div class="row">
-            <div class="col-xl-8">
-                <p class="header__all__news">
-                    Другие новости
-                </p>
-                <a href="{% url 'index' %}#head__page" class="news__more__link">
-                    Ко всем новостям
-                </a>
-            </div>
-        </div>
-        <div class="row">
          
-            <div class="col-xl-6">
-                <div class="row">
-                    {% for post in bottom_related_news %}
-                    <div class="col-xl-6">
-                        <div class="link__read__news__inside">
-                            <div class="block__news">
-                                <a href="{% url 'index' %}#head__page" class="link__news"></a>
-                                <p class="data__news__main">{{ post.published_date|date:"d M. Y"}}</p>
-                                <div class="box__news mt-1">
-                                    <p class="box__news__text">
-                                        {{ post.short_description }}</p>
+                <div class="col-xl-4">
+                    <p class="header__all__news">
+                        Другие новости
+                    </p>
+                    <a href="{% url 'all_news' %}#head__page" class="news__more__link">
+                        Ко всем новостям
+                    </a>
+                    <div class="row">
+                        {% for post in bottom_related_news %}
+                        <div class="col-xl-6">
+                            <div class="link__read__news__inside">
+                                <div class="block__news">
+                                    <a href="{% url 'index' %}#head__page" class="link__news"></a>
+                                    <p class="data__news__main">{{ post.published_date|date:"d M. Y"}}</p>
+                                    <div class="box__news mt-1">
+                                        <p class="box__news__text">
+                                            {{ post.short_description }}</p>
+                                    </div>
+                                    </a> </a>
+                                    <button class="read_news mt-2">
+                                        <a href="{% url 'details' 'post' post.pk %}" class="read_news_text">Читать</a>
+                                    </button>
                                 </div>
-                                </a> </a>
-                                <button class="read_news mt-2">
-                                    <a href="{% url 'details' 'post' post.pk %}" class="read_news_text">Читать</a>
-                                </button>
                             </div>
                         </div>
+                        {% endfor %}
                     </div>
-                    {% endfor %}
+
+
                 </div>
-
-
-            </div>
+         
         </div>
+
+
     </div>
 </div>
 

@@ -413,12 +413,12 @@ input[type="search"]::placeholder {
     transform: rotate(180deg);
     width: 45px;
     height: 45px;
-    margin-right: 25px;
+    // margin-right: 25px;
     
 }
 
 .carousel-control-next-icon {
-    background: url(/static/img/arrow.png) no-repeat;
+        background: url(/static/img/arrow.png) no-repeat;
     -o-transform: rotate(0deg);
     -ms-transform: rotate(0deg);
     -moz-transform: rotate(0deg);
@@ -426,5 +426,5 @@ input[type="search"]::placeholder {
     transform: rotate(0deg);
     width: 45px;
     height: 45px;
-    margin-right: 25px;
+    // margin-right: 25px;
 }
