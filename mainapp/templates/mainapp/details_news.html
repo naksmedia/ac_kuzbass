@@ -100,23 +100,24 @@
 
             </div>
 
-                <div class="col-xl-4">
-                    <p class="header__all__news">
-                        Другие новости
-                    </p>
-                    <a href="{% url 'all_news' %}#head__page" class="news__more__link">
-                        Ко всем новостям
-                    </a>
-                    <div class="row">
+                
+                 
+                 
                         {% for post in related_posts %}
-                        <div class="col-xl-6">
+                        <div class="col-sm-6 col-xl-3">
+                                <p class="header__all__news">
+                                        Другие новости
+                                    </p>
+                                    <a href="{% url 'all_news' %}#head__page" class="news__more__link">
+                                        Ко всем новостям
+                                    </a>
                             <div class="link__read__news__inside">
                                 <div class="block__news">
                                     <a href="{% url 'index' %}#head__page" class="link__news"></a>
                                     <p class="data__news__main">{{ post.published_date|date:"d M. Y"}}</p>
                                     <div class="box__news mt-1">
                                         <p class="box__news__text">
-                                            {{ post.title }}</p>
+                                            {{ post.title|truncatechars:55 }}</p>
                                     </div>
                                     </a> </a>
                                     <button class="read_news mt-2">
@@ -126,10 +127,10 @@
                             </div>
                         </div>
                         {% endfor %}
-                    </div>
+               
 
 
-                </div>
+          
 
         </div>
 

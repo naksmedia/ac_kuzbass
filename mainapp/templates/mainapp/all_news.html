@@ -6,7 +6,7 @@
         <div class="row">
             <div class="col-xl-4">
                 <div class="headline_bg_inner_page">
-                    Новости
+                   Список новостей
                 </div>
                 <p class="subtitle_inner_page_text">
                     События нашей организации
@@ -35,7 +35,7 @@
                                     <p class="data__news__main">{{ post.published_date|date:"d M. Y"}}</p>
                                 <div class="box__news mt-1">
                                     <p class="box__news__text">
-                                        {{ post.title }}</p>
+                                        {{ post.title|truncatechars:55 }}</p>
                                 </div>
                                 </a> </a>
                                 <button class="read_news mt-2">
