@@ -19,6 +19,9 @@ def title_holder(url_code):
     try:
         post = Post.objects.get(url_code=url_code)
         title = post.title
+        button_text = post.button_text
+        if button_text != 'НЕ УКАЗАН':
+            title = button_text
     except Post.DoesNotExist:
         title = 'Страница еще не создана ({})'.format(url_code)
     return title

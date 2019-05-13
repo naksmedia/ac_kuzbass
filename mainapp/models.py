@@ -51,6 +51,8 @@ class ContentMixin(models.Model):
     '''base class for Post, Article and Documents'''
     title = models.CharField(u'Название', max_length=200)
     url_code = models.CharField(u'Код ссылки', max_length=30, blank=True, default='НЕ УКАЗАН')
+    button_text = models.CharField(u'Название кнопки', max_length=30, blank=True, default='НЕ УКАЗАН',
+                            help_text="Если заполнено, то будет использоваться в link_holder вместо заголовка страницы")
     short_description = models.CharField(
         u'Краткое описание', max_length=200, blank=True)
     tags = models.ManyToManyField(Tag, verbose_name='Тэги')
