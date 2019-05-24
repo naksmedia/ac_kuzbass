@@ -19,7 +19,7 @@
     border-bottom: none;
     background-color: #ffffff;
     color: #fff;
-    border-top: 15px solid #50b3ff;
+    border-top: 15px solid #2660ad;
 }
 
 .modal-footer {
@@ -165,7 +165,7 @@ input~label[for="sogl"] {
 }
 
 .button__to__send_zayavka__formmodal {
-    background-color: #50b3ff;
+    background-color: #2660ad;
     border: none;
     color: #fff;
     font-size: 16px;
@@ -174,10 +174,10 @@ input~label[for="sogl"] {
     text-transform: uppercase;
     padding: 12px 45px;
     &:hover{
-        background-color: #62b9fc;
+        background-color: #2660ad;
     }
     &:active{
-        background-color: #3987c2;
+        background-color: #2660ad;
     }
     @media screen and (max-width: 450px) {
         padding: 15px;
