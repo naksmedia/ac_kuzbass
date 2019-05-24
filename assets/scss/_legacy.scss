@@ -163,7 +163,6 @@ text-decoration: underline;
   font-size: 13px;
   color: #4b5c72;
   margin-top: 10px;
-
   margin-bottom: 0px;
 }
 
@@ -293,7 +292,7 @@ text-decoration: underline;
 
 
 .box_content_in_pages{
-  padding: 45px 0px 45px;
+  padding: 65px 0px 65px;
 }
 
 .headline_cok_text{
@@ -395,65 +394,48 @@ text-decoration: underline;
 
 // Профстандарты в области сварки
 
-.box__standart {
-  box-shadow: 0 2px 18px rgba(27, 27, 27, 0.03);
-  margin-top: 25px;
-  padding: 35px;
-  border-radius: 3px;
-  border: 1px solid #f3f3f3;
-
-  &:hover {
-      border: 1px solid rgb(199, 223, 255);
-      transition: 0.2s;
-  }
+.standart-info {
+  border: 1px solid #33465f54;
+  background-color: #ffffff;
+  color: #242424;
+  padding: 2.2rem 2rem;
 }
 
-.header__standart {
-  font-size: 16px;
-  font-weight: 350;
-  margin-bottom: 10px;
+.object_standart{
+  font-size: 18px;
+  font-weight: 450;
 }
 
-.name__standart {
-  font-size: 16px;
-  font-weight: 500;
-  color: #000;
+.standart-info:hover {
+	box-shadow: 0 2px 18px rgba(0, 0, 0, 0.09);
+}
+.standart-info .btn-light, .doc-info .btn-light {
+	color: #595959;
+	border: 1px solid #d0d0d0;
+	}
+.standart-info .btn-light:hover, .doc-info .btn-light:hover {
+	background-color: rgba(220, 220, 220, 1);
+}
+.standart-info .btn-outline-light, .doc-info .btn-outline-light {
+	color: #595959;
+	border: 1px solid #d0d0d0;
+}
+.doc-info .btn-outline-light:hover {
+	background-color: #eeee;
+}
+.block-docs-right td.doc-date {
+	color: #ababab;
+	font-size: 0.8rem;
+}
+a.docs-link:hover {
+	text-decoration: none;
+}
+.line-doc-right {
+	border-top: 1px solid #e8e8e8;
 }
 
-.info__standart {
-  font-size: 16px;
-  font-weight: 350;
-  color: #000;
-  margin-bottom: 5px;
-}
-
-.number__standart {
-  font-size: 14px;
-  font-weight: 600;
-}
-
-.box__standart__line__two {
-  padding: 70px 0px;
-}
-
-.download__standart {
-  background-color: rgb(206, 206, 206);
-  border: none;
-  border-radius: 3px;
-  padding: 10px;
-  margin-top: 10px;
-
-  a {
-      padding: 25px;
-      font-size: 14px;
-      color: #fff;
-      text-decoration: none;
-  }
-
-  &:hover {
-      background-color: rgb(155, 155, 155);
-      transition: 0.2s;
-  }
+.search-docs label {
+	color: #959595;
 }
 
 .right__column__header {
