@@ -77,3 +77,4 @@ log/**
 server/
 style.css
 style.css.map
+secret.json

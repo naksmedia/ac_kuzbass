@@ -8,6 +8,14 @@ import json
 import os
 import zipfile
 
+try:
+    with open("secret.json") as secret_file:
+        secret = json.load(secret_file)
+        env.update(secret)
+        # env.hosts = secret['hosts']
+except FileNotFoundError:
+    print('***ERROR: no secret file***')
+
 if os.name != 'nt':
     env.use_ssh_config = True
     env.hosts = ['server']
