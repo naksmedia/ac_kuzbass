@@ -31,7 +31,7 @@
         <div class="headline_doc_section">Документы ССР-3ГАЦ (аттестация персонала)</div>
           {% for doc in ssr_3gac_documents %}
           <div class="col-sm-6 col-12">
-            <a href="{{ doc.document }}" download="">
+            <a href="{{ doc.document.url }}" download="">
               <div class="box_doc_file" title="Скачать">
                 <div class="{% if doc.extension == '.docx' %}icon_word{% else %}icon_pdf{% endif %}"></div>
                 <p class="doc_text_name">
@@ -61,7 +61,7 @@
           <div class="headline_doc_section">Документы АЦСМ-46 (Аттестация сварочных материалов)</div>
           {% for doc in acsm_46_documents %}
           <div class="col-sm-6 col-12">
-            <a href="{{ doc.document }}" download="">
+            <a href="{{ doc.document.url }}" download="">
               <div class="box_doc_file" title="Скачать">
                 <div class="{% if doc.extension == '.docx' %}icon_word{% else %}icon_pdf{% endif %}"></div>
                 <p class="doc_text_name">
@@ -76,7 +76,7 @@
           <div class="headline_doc_section">Документы АЦСО-82 (Аттестация сварочного оборудования)</div>
           {% for doc in acso_82_documents %}
           <div class="col-sm-6 col-12">
-            <a href="{{ doc.document }}" download="">
+            <a href="{{ doc.document.url }}" download="">
               <div class="box_doc_file" title="Скачать">
                 <div class="{% if doc.extension == '.docx' %}icon_word{% else %}icon_pdf{% endif %}"></div>
                 <p class="doc_text_name">
@@ -91,7 +91,7 @@
           <div class="headline_doc_section">Документы АЦСТ-90 (Аттестация сварочных технологий)</div>
           {% for doc in acst_90_documents %}
           <div class="col-sm-6 col-12">
-            <a href="{{ doc.document }}" download="">
+            <a href="{{ doc.document.url }}" download="">
               <div class="box_doc_file" title="Скачать">
                 <div class="{% if doc.extension == '.docx' %}icon_word{% else %}icon_pdf{% endif %}"></div>
                 <p class="doc_text_name">
@@ -106,7 +106,7 @@
           <div class="headline_doc_section">Документы ЦОК-12 (Центр оценки квалификаций)</div>
           {% for doc in cok_12_documents %}
           <div class="col-sm-6 col-12">
-            <a href="{{ doc.document }}" download="">
+            <a href="{{ doc.document.url }}" download="">
               <div class="box_doc_file" title="Скачать">
                 <div class="{% if doc.extension == '.docx' %}icon_word{% else %}icon_pdf{% endif %}"></div>
                 <p class="doc_text_name">
