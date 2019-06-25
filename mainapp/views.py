@@ -162,6 +162,7 @@ def cok(request):
 
 def profstandarti(request):
     return render(request, 'mainapp/profstandarti.html')
+
 def contacts(request):
     return render(request, 'mainapp/contacts.html')
 def all_news(request):
