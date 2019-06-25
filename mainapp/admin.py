@@ -107,7 +107,7 @@ class PostAdmin(admin.ModelAdmin):
     ]
     readonly_fields = ['id', get_url]
     list_display = [
-        'title', 'category', 'created_date', 'publish_on_main_page',
+        'title', 'url_code', 'created_date', 'publish_on_main_page',
         'publish_on_news_page'
     ]
     inlines = [PostPhotoInline, DocumentInline]
