@@ -46,7 +46,7 @@
           <div class="headline_doc_section">Документы ССР-3ЦСП (специальная подготовка)</div>
           {% for doc in ssr_3csp_documents %}
           <div class="col-sm-6 col-12">
-            <a href="{{ doc.document }}" download="">
+            <a href="{{ doc.document.url }}" download="">
               <div class="box_doc_file" title="Скачать">
                 <div class="{% if doc.extension == '.docx' %}icon_word{% else %}icon_pdf{% endif %}"></div>
                 <p class="doc_text_name">
@@ -54,7 +54,7 @@
                   {{ doc.extension }}
                 </p>
               </div>
-            </a>          
+            </a>
           </div>
           {% endfor %}
           <div class="line_center"></div>
@@ -69,7 +69,7 @@
                   {{ doc.extension }}
                 </p>
               </div>
-            </a>          
+            </a>
           </div>
           {% endfor %}
           <div class="line_center"></div>
@@ -84,7 +84,7 @@
                   {{ doc.extension }}
                 </p>
               </div>
-            </a>          
+            </a>
           </div>
           {% endfor %}
           <div class="line_center"></div>
@@ -99,7 +99,7 @@
                   {{ doc.extension }}
                 </p>
               </div>
-            </a>          
+            </a>
           </div>
           {% endfor %}
           <div class="line_center"></div>
@@ -114,7 +114,7 @@
                   {{ doc.extension }}
                 </p>
               </div>
-            </a>          
+            </a>
           </div>
           {% endfor %}
           <div class="line_center"></div>
