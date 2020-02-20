@@ -1,7 +1,7 @@
 // Кнопка поиска
 
 $(document).ready(function() {
-  console.log('123');
+  // console.log('123');
 
   $('[data-fancybox="gallery"]').fancybox({
     // Options will go here
