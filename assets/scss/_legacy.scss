@@ -5,7 +5,7 @@ body {
     font-size: 14px;
     line-height: 1.6;
     background-color: #fff;
- 
+
 }
 
 
@@ -34,13 +34,13 @@ body {
     font-weight: 450;
     color: #000;
     margin-top: 15px;
-  
+
     @media screen and (max-width: 1199px) {
         margin-top: 15px;
     }
-  
+
   }
-  
+
   .political__text__small {
     font-size: 16px;
     font-weight: 400;
@@ -48,24 +48,24 @@ body {
     margin-top: 15px;
     margin-bottom: 15px;
   }
-  
+
   .text_pynkt{
   font-size: 14px;
   font-weight: 450;
   }
-  
+
   .line_end {
     border: 0.5px solid #ebebeb;
     margin-top: 25px;
     margin-bottom: 25px;
   }
-  
+
   .header_right_column{
     font-size: 20px;
     font-weight: 400;
     color: #000;
   }
-  
+
   .box_right_column a{
   text-decoration: none;
   list-style-type: none;
@@ -74,20 +74,20 @@ body {
   line-height: 1.8;
   color: #39567e;
   }
-  
+
   .sider_bar {
     position: sticky;
     top: 4rem;
     z-index: 1000;
     height: calc(45vh);
   }
-  
+
   .left_line_headline {
     border: 0.5px solid #39567e;
     margin-top: 35px;
     width: 95px;
     @media screen and (max-width: 992px) {
-      display: none;     
+      display: none;
     }
   }
 
@@ -108,7 +108,7 @@ background-color: #e7f1ff;
 .info_box_text{
   font-size: 13px;
  color: #4b5c72;
-  margin-bottom: 0px; 
+  margin-bottom: 0px;
   text-align: center;
 }
 
@@ -122,7 +122,7 @@ background-color: #e7f1ff;
 
   a {
       color: #4b5c72;
-      line-height: 1.8;    
+      line-height: 1.8;
   }
 
 }
@@ -142,9 +142,9 @@ background-color: #e7f1ff;
   border-left-style: dashed;
   border-left-color: #4b5c724f;
   @media screen and (max-width: 1199px) {
-    border-right-width: 0px; 
-    border-left-width: 0px; 
-    margin-top: 15px;   
+    border-right-width: 0px;
+    border-left-width: 0px;
+    margin-top: 15px;
   }
   }
 
@@ -169,7 +169,7 @@ text-decoration: underline;
 .info_box_feedback{
   text-align: center;
   @media screen and (max-width: 1199px) {
-    margin-top: 25px;   
+    margin-top: 25px;
     }
 }
 
@@ -203,7 +203,7 @@ text-decoration: underline;
 // inner page
 
 .bg_header_inner_page{
-  background: url(/static/img/bg_center.jpg) no-repeat;
+  background: url(/static_root/img/bg_center.jpg) no-repeat;
   background-size: cover;
   padding: 45px 0px 45px;
 }
@@ -228,7 +228,7 @@ text-decoration: underline;
   outline: none;
   padding: 0px;
   margin-top: 15px;
-  a{   
+  a{
     padding: 12px 25px;
     border: 1px solid #fff;
     text-decoration: none;
@@ -245,7 +245,7 @@ text-decoration: underline;
   width: 5px;
   margin-top: -3px;
   padding: 0px;
-  margin-right: 20px;  
+  margin-right: 20px;
 }
 
 
@@ -287,7 +287,7 @@ text-decoration: underline;
   height: 45px;
   margin-left: -15px;
   margin-top: 7px;
-  background: url(/static/img/arrow_punkt.png) center 0 no-repeat;
+  background: url(/static_root/img/arrow_punkt.png) center 0 no-repeat;
 }
 
 

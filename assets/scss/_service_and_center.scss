@@ -58,7 +58,7 @@
   left: 0;
   margin-top: 10px;
   // margin-left: 30px;
-  background: url(/static/img/arrow_punkt.png) center 0 no-repeat;
+  background: url(/static_root/img/arrow_punkt.png) center 0 no-repeat;
 }
 
 .list_link {
@@ -179,7 +179,7 @@
   padding: 0px 15px;
   @media screen and (max-width: 992px) {
   font-size: 16px;
- } 
+ }
 }
 
 .box_naks_organization {
@@ -202,7 +202,7 @@
   margin-bottom: 5px;
   @media screen and (max-width: 992px) {
     font-size: 14px;
-   } 
+   }
 
 }
 
@@ -212,7 +212,7 @@
   margin-bottom: 5px;
   @media screen and (max-width: 992px) {
     font-size: 12px;
-   } 
+   }
 }
 
 .number_personal_center {
@@ -221,5 +221,5 @@
   margin-bottom: 5px;
   @media screen and (max-width: 992px) {
     font-size: 12px;
-   } 
+   }
 }
