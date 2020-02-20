@@ -219,15 +219,15 @@ input[type="search"]::placeholder {
   background-color: #20202085; }
 
 .bg_carousel_content_one {
-  background: url(/static/img/background.jpg) no-repeat;
+  background: url(/static_root/img/background.jpg) no-repeat;
   background-size: cover; }
 
 .bg_carousel_content_two {
-  background: url(/static/img/nerazrush.jpg) no-repeat;
+  background: url(/static_root/img/nerazrush.jpg) no-repeat;
   background-size: cover; }
 
 .bg_carousel_content_three {
-  background: url(/static/img/background.jpg) no-repeat;
+  background: url(/static_root/img/background.jpg) no-repeat;
   background-size: cover; }
 
 .system_button a {
@@ -381,7 +381,7 @@ input[type="search"]::placeholder {
     transition: 0.2s; }
 
 .carousel-control-prev-icon {
-  background: url(/static/img/arrow.png) no-repeat;
+  background: url(/static_root/img/arrow.png) no-repeat;
   -o-transform: rotate(180deg);
   -ms-transform: rotate(180deg);
   -moz-transform: rotate(180deg);
@@ -391,7 +391,7 @@ input[type="search"]::placeholder {
   height: 45px; }
 
 .carousel-control-next-icon {
-  background: url(/static/img/arrow.png) no-repeat;
+  background: url(/static_root/img/arrow.png) no-repeat;
   -o-transform: rotate(0deg);
   -ms-transform: rotate(0deg);
   -moz-transform: rotate(0deg);
@@ -464,7 +464,7 @@ input[type="search"]::placeholder {
   height: 35px;
   left: 0;
   margin-top: 5px;
-  background: url(/static/img/yellow_punkt.png) center 0 no-repeat; }
+  background: url(/static_root/img/yellow_punkt.png) center 0 no-repeat; }
 
 .footer_info_link {
   font-size: 14px;
@@ -536,7 +536,7 @@ input[type="search"]::placeholder {
   height: 50px;
   left: 0;
   margin-top: 5px;
-  background: url(/static/img/enter_system.png) center 0 no-repeat; }
+  background: url(/static_root/img/enter_system.png) center 0 no-repeat; }
 
 .enter_system_link {
   font-size: 14px;
@@ -1042,7 +1042,7 @@ body {
     transition: 0.2s; }
 
 .bg_header_inner_page {
-  background: url(/static/img/bg_center.jpg) no-repeat;
+  background: url(/static_root/img/bg_center.jpg) no-repeat;
   background-size: cover;
   padding: 45px 0px 45px; }
 
@@ -1103,7 +1103,7 @@ body {
   height: 45px;
   margin-left: -15px;
   margin-top: 7px;
-  background: url(/static/img/arrow_punkt.png) center 0 no-repeat; }
+  background: url(/static_root/img/arrow_punkt.png) center 0 no-repeat; }
 
 .box_content_in_pages {
   padding: 65px 0px 65px; }
@@ -1290,7 +1290,7 @@ a.docs-link:hover {
   height: 50px;
   left: 0;
   margin-top: 10px;
-  background: url(/static/img/arrow_punkt.png) center 0 no-repeat; }
+  background: url(/static_root/img/arrow_punkt.png) center 0 no-repeat; }
 
 .list_link {
   list-style: none;
@@ -1523,7 +1523,7 @@ a.docs-link:hover {
   left: 0;
   margin-top: 5px;
   margin-left: 10px;
-  background: url(/static/img/icon_pdf-01.svg) center 0 no-repeat; }
+  background: url(/static_root/img/icon_pdf-01.svg) center 0 no-repeat; }
 
 .doc_text_name {
   font-size: 16px;
@@ -1545,7 +1545,7 @@ a.docs-link:hover {
   left: 0;
   margin-top: 5px;
   margin-left: 10px;
-  background: url(/static/img/icon_word-01.svg) center 0 no-repeat; }
+  background: url(/static_root/img/icon_word-01.svg) center 0 no-repeat; }
 
 .box_doc_button {
   text-align: center; }
@@ -1634,7 +1634,7 @@ a.docs-link:hover {
   -o-transform: scale(1.01); }
 
 .box_content_personal {
-  background: url(/static/img/bg_personal.jpg) no-repeat;
+  background: url(/static_root/img/bg_personal.jpg) no-repeat;
   background-size: cover;
   padding: 45px 0px 45px; }
 
