@@ -24,6 +24,7 @@
   <link rel="stylesheet" href="{% static 'css/jquery.fancybox.min.css' %}">
   <link rel="stylesheet" href="{% static 'owlcarousel/owl.carousel.min.css' %}">
   <link rel="stylesheet" href="{% static 'owlcarousel/owl.theme.default.min.css' %}">
+  <link rel="stylesheet" href="{% sass_src 'orderapp/scss/orderform.scss' %}">
   {% endblock %}
 
 
@@ -35,9 +36,9 @@
 
   <!-- Include Modal -->
   {% include 'mainapp/includes/modal-window.html' %}
-  {% comment %} <div w3-include-html="includes/modal-window.html"></div> {% endcomment %}
+  {% include 'orderapp/modal-order.html' %}
   <!-- End Include Modal -->
-  
+
 
   <!-- Include bg-menu-info -->
   {% if request.resolver_match.url_name == 'index' %}
@@ -45,7 +46,6 @@
   {% else %}
   {% include 'mainapp/includes/bg-inner-page.html' %}
 {% endif %}
-  {% comment %} <div w3-include-html="includes/menu-bg-info.html"></div> {% endcomment %}
   <!-- End Include bg-menu-info -->
 
 
@@ -55,7 +55,6 @@
 
   <!-- Include Modal -->
   {% include 'mainapp/includes/basement.html' %}
-  {% comment %} <div w3-include-html="includes/basement.html"></div> {% endcomment %}
   <!-- End Include Modal -->
 
 
@@ -74,6 +73,8 @@
   <script src="{% static 'js/jquery.counterup.min.js' %}"></script>
   <script src="{% static 'js/jquery.counterup.js' %}"></script>
   <script src="{% static 'owlcarousel/owl.carousel.min.js' %}"></script>
+  <script src="{% static 'orderapp/js/order_script.js' %}"></script>
+
 
 
 </body>

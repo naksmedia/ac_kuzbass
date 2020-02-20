@@ -16,6 +16,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 import mainapp.views as mainapp
+import orderapp.views as orderapp
 from django.conf.urls.static import static
 from django.conf import settings
 
@@ -38,7 +39,9 @@ urlpatterns = [
         'detailview/<slug:content>/<slug:pk>',
         mainapp.details_news,
         name='detailview'),
-       path('ckeditor/', include('ckeditor_uploader.urls')),
+    path('ckeditor/', include('ckeditor_uploader.urls')),
+    path('accept_order/', orderapp.accept_order, name="accept_order"),
+    path('captcha/', include('captcha.urls')),
 ]
 
 if settings.DEBUG:
