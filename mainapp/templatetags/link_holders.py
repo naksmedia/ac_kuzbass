@@ -6,6 +6,16 @@ from django.urls import reverse
 register = template.Library()
 
 @register.simple_tag
+def link_holder_exists(url_code):
+    return Post.objects.filter(url_code=url_code).count()
+
+@register.simple_tag
+def link_holder_content(*args, **kwargs):
+    url_code = kwargs['url_code']
+    print("URL_CODE", url_code)
+    return Post.objects.filter(url_code=url_code).first().text
+
+@register.simple_tag
 def link_holder(url_code):
     try:
         post = Post.objects.get(url_code=url_code)

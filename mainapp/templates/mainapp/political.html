@@ -1,4 +1,4 @@
-{% extends 'mainapp/base.html' %}
+{% extends 'mainapp/base.html' %}{% load link_holders %}
 {% load static %}
 {% block content %}
 <div class="bg_header_inner_page" id="page_top">
@@ -19,10 +19,10 @@
 </div>
 
 <div class="box_content_in_pages">
+	{% link_holder_content url_code=ATTST|safe %}
     <div class="container">
         <div class="row">
             <div class="row">
-             
                 <div class="col-sm-12 col-xl-7">
                     <div class="box_political">
                         <p class="header__political">
