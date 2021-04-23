@@ -79,3 +79,5 @@ style.css
 style.css.map
 secret.json
 static_root/
+style*.*css
+style*.*map
